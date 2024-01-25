@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alibaba.com: Manufacturers, Suppliers and Exporters</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  <script src="/src/js/common.js"></script>
+</head> 
+<body>
+    <!-- Notice Bar -->
+  <div id="b_Bar" href="/public/index.html" class="b_Bar">
+    <a class="link-header flex items-center justify-evenly"> 
+        <div class="flex items-center">
+            <img src="/src/img/view_logo.png" alt="Discount" srcset="">
+            <p class="text-xs bg-white">Sourcing Festival</p>
+        </div>
+        <h2 class="text-red-600 text-center font-bold text-base">Stock up for Christmas with the lowest prices in 90 days, cross-category consolidation from Nov 1-26</h2>
+        <div class="header_link">
+            View More<span class="arrow-right"></span>
+        </div>
+    </a>      
+  </div>
+  <!-- Alibaba Logo Header Bar -->
+  <div class="header-searchBar">
+        <!-- Alibaba -->
+    <div id="headerBar" class="tnh-origin"> 
+            <div id="newHeader" class="newHeader tnh-dark content-center">
+                <div class="header-content flex justify-between content-center h-16">
+                    <div class="p-5">
+                        <div id="logo" class="logo">
+                        </div>
+                    </div>  
+                    <div class="p-3 hidden" id="product_search_box">
+                        <div class="border-[1px] border-[#222] border-solid h-10 w-[700px] rounded-2xl">
+                            <div class="inline-block relative h-full w-full">
+                                <button class="font-semibold py-2 px-4 rounded inline-flex items-center" onclick="changeProduct()" id="product">
+                                    <span>Products 
+                                        <i style='font-size:14px' class='fas'>&#xf107;</i> 
+                                        <!-- <i style='font-size:24px' class='fas'>&#xf106;</i> -->
+                                        <!-- <i class='fas fa-angle-down' id="productIcon"></i> -->
+                                        <!-- <i class='fas fa-angle-down'></i> -->
+                                    </span>
+                                    <span class="pl-2">
+                                        |
+                                    </span>
+                                </button>
+                                <ul class="absolute hidden text-gray-700 pt-1 z-50" id="productContent">
+                                    <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Products</a></li>
+                                    <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Manufacturers</a></li>
+                                    <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Suppliers</a></li>
+                                </ul>
+                                <div>
+                                    <input type="text" class="h-8 w-[400px] bg-transparent border-0">
+                                </div>
+                                <div class="camera absolute bottom-1 right-36 hover:cursor-pointer">
+                                    <i class="fa-solid fa-camera text-black text-xl"></i>
+                                </div>
+                                <div class="absolute right-1 bottom-1 hover:cursor-pointer">
+                                    <button class="px-5 py-1 bg-[#f60] rounded-full">
+                                        <i class="fa-regular fa-magnifying-glass text-sm font-semibold"></i>
+                                        <span class="text-base font-bold pl-2">Search</span>
+                                    </button>
+                                </div>   
+                            </div>
+                        </div>                       
+                    </div>
+       
+                    <div class="accessTool flex items-center">
+                        <div class="flex accTool"> 
+                            <span>Ship to:</span>
+                            <div>
+                            <img class="img_myanmar" src="/src/img/myanmar.png" alt="Myanmar" srcset="">
+                            </div>
+                            <span>MM</span>
+                        </div> 
+                        <div class="flex accTool">
+                            <i class="fa-solid fa-globe globe"></i>
+                            <span>English USD</span>
+                        </div>
+                        <div class="flex accTool">
+                            <div>
+                            <img src="/src/img/signIn.png" alt="" class="src">
+                            </div>
+                            <span>Sign in</span>
+                        </div>
+                        <div class="accTool">
+                            <button class="py-2 px-6 bg-[#f60] rounded-full">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Sub Header -->
+        <div class="subHeader subHeader_white" id="subHeader"> <!--z-50-->
+            <div class="subHeader-content">
+            <div class="navBar flex justify-between text-sm">
+                <div class="flex right-header">
+                    <!-- Start -->
+                    <div id="category_title" onmouseover="category_show()" onmouseout="category_hide()" class="inline-block h-[541px]">
+                        <button class="category-title font-semibold px-4 rounded inline-flex items-center">
+                            <span >All Categories</span>
+                        </button>
+                        <div id="category_tab_content" class="animated_tab_content h-[541px] bg-white border-t-1 border-solid border-[#ddd] absolute left-0 top-24 w-full overflow-hidden z-50 hidden cursor-pointer">
+                            <div class="flex flex-col gap-2 justify-start pl-[220px] my-2 relative">
+                                <!-- 1 -->
+                                <div id="drop_title" onmouseover="drop_title_show(0)" onmouseout="drop_title_hide(this)" class="flex drop_title">
+                                    <div class="w-[340px] h-5 py-2">
+                                        <a class="hover:bg-gray-50 py-2 block whitespace-no-wrap hover:font-bold" href="#">My Categories</a>
+                                    </div>                                            
+                                        <div id="drop_content" class="drop_content text-gray-700 bg-gray-50">
+                                            <!-- 1-1 -->
+                                            <div id="sec_drop_title" onmouseover="sec_drop_title_show(0)" onmouseout="sec_drop_title_hide(this)" class="flex sec_drop_title" >
+                                                <div class="w-[316px] h-5 absolute inline-block">
+                                                    <a class="hover:bg-gray-100 py-2 block whitespace-no-wrap hover:font-bold" href="#">Commercial Service Equipment
+                                                    </a>
+                                                </div>                                                        
+                                                    <div id="sec_drop_content" class="sec_drop_content text-gray-700 w-[900px] absolute right-0">
+                                                        <div class="font-bold">Commercial Service Equipments > </div>
+                                                        <div class="w-[800px] flex flex-wrap gap-10 pt-5 mx-auto">
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">    
+                                                                <div>
+                                                                    <img src="/src/img/display_rack.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Display Racks</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/shelves.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Supermarket Shelves</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/digital_display.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Digital Signage and Displays</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/electronic_sign.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Electronic Signs</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/hotel&resturant.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Other Hotel & Restaurant</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/sound_equip.webp " class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Sound Equipment</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/photo_boot.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Photo Booth</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/vending_machine.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Vending Machines</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/refrige.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Refrigeration Eqipment</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/advertizing_inflat.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Advertising Inflatable</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/food_track.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Food Trucks</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/audio_equip.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Audio Sound Equipment</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/dj_installer.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">DJ Controller</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/serving_tray.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Serving Trays</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/other_advert.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Other advertising</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/light_boxes.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Light Boxes</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 underline" href="#">   
+                                                                More
+                                                            </a>
+                                                        </div>
+                                                        
+                                                    </div>
+                                            </div>
+                                            <!-- 1-2 -->
+                                            <div id="sec_drop_title" onmouseover="sec_drop_title_show(1)" onmouseout="sec_drop_title_hide(this)" class="flex sec_drop_title" >
+                                                <div class="w-[316px] h-5 absolute top-10 inline-block">
+                                                    <a class="hover:bg-gray-100 py-2 block whitespace-no-wrapm hover:font-bold" href="#">Home & Garden
+                                                    </a>
+                                                </div>                                                        
+                                                <div id="sec_drop_content" class="sec_drop_content text-gray-700 w-[900px] absolute right-0 hidden sec_drop_content">
+                                                    <div class="font-bold">Home & Garden > </div>
+                                                    <div class="w-[800px] flex flex-wrap gap-10 pt-5 mx-auto">
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">    
+                                                            <div>
+                                                                <img src="/src/img/display_rack.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Display Racks</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/shelves.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Supermarket Shelves</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/digital_display.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Digital Signage and Displays</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/electronic_sign.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Electronic Signs</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/hotel&resturant.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Other Hotel & Restaurant</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/sound_equip.webp " class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Sound Equipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/photo_boot.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Photo Booth</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/vending_machine.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Vending Machines</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/refrige.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Refrigeration Eqipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                            <div>
+                                                                <img src="/src/img/advertizing_inflat.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Advertising Inflatable</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                            <div>
+                                                                <img src="/src/img/food_track.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Food Trucks</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/audio_equip.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Audio Sound Equipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/dj_installer.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">DJ Controller</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/serving_tray.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Serving Trays</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/other_advert.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Other advertising</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/light_boxes.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Light Boxes</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 underline" href="#">   
+                                                            More
+                                                        </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- 2 -->
+                                <div id="drop_title" onmouseover="drop_title_show(1)" onmouseout="drop_title_hide(this)" class="flex drop_title ">
+                                    <div class="w-[340px] h-5 py-2 ">
+                                        <a class="hover:bg-gray-50 py-2 block whitespace-no-wrap hover:font-bold absolute top-12" href="#">Home Decor</a>
+                                    </div>                                              
+                                        <div id="drop_content" class="drop_content hidden text-gray-700 bg-gray-50">
+                                            <div id="sec_drop_title" onmouseover="sec_drop_title_show(2)" onmouseout="sec_drop_title_hide(this)" class="flex" >
+                                                <div class="w-[316px] h-5 absolute top-0 inline-block">
+                                                    <a class="hover:bg-gray-100 py-2 block whitespace-no-wrap hover:font-bold" href="#">Gift & Cards
+                                                    </a>
+                                                </div>                                                        
+                                                    <div id="sec_drop_content" class="sec_drop_content text-gray-700 w-[900px] bg-red-50 absolute right-0">
+                                                        <div class="font-bold">Gift & Cards > </div>
+                                                        <div class="w-[800px] flex flex-wrap gap-10 pt-5 mx-auto">
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">    
+                                                                <div>
+                                                                    <img src="/src/img/display_rack.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Display Racks</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/shelves.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Supermarket Shelves</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/digital_display.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Digital Signage and Displays</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/electronic_sign.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Electronic Signs</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/hotel&resturant.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Other Hotel & Restaurant</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/sound_equip.webp " class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Sound Equipment</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/photo_boot.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Photo Booth</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/vending_machine.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Vending Machines</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/refrige.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Refrigeration Eqipment</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/advertizing_inflat.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Advertising Inflatable</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/food_track.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Food Trucks</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/audio_equip.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Audio Sound Equipment</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/dj_installer.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">DJ Controller</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/serving_tray.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Serving Trays</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/other_advert.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Other advertising</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                                <div>
+                                                                    <img src="/src/img/light_boxes.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                                </div>                                 
+                                                                <div class="text-sm">Light Boxes</div>
+                                                            </a>
+                                                            <a class="flex-col justify-center w-28 underline" href="#">   
+                                                                More
+                                                            </a>
+                                                        </div>
+                                                        
+                                                    </div>
+                                            </div>
+                                            <div id="sec_drop_title" onmouseover="sec_drop_title_show(3)" onmouseout="sec_drop_title_hide(this)" class="flex sec_drop_title" >
+                                                <div class="w-[316px] h-5 absolute top-10 inline-block">
+                                                    <a class="hover:bg-gray-100 py-2 block whitespace-no-wrapm hover:font-bold" href="#">Construction & Real Estate
+                                                    </a>
+                                                </div>                                                        
+                                                <div id="sec_drop_content" class="sec_drop_content text-gray-700 w-[900px] absolute right-0 hidden sec_drop_content">
+                                                    <div class="font-bold">Construction & Real Estate > </div>
+                                                    <div class="w-[800px] flex flex-wrap gap-10 pt-5 mx-auto">
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">    
+                                                            <div>
+                                                                <img src="/src/img/display_rack.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Display Racks</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/shelves.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Supermarket Shelves</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/digital_display.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Digital Signage and Displays</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/electronic_sign.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Electronic Signs</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/hotel&resturant.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Other Hotel & Restaurant</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/sound_equip.webp " class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Sound Equipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/photo_boot.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Photo Booth</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/vending_machine.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Vending Machines</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/refrige.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Refrigeration Eqipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                            <div>
+                                                                <img src="/src/img/advertizing_inflat.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Advertising Inflatable</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                            <div>
+                                                                <img src="/src/img/food_track.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Food Trucks</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/audio_equip.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Audio Sound Equipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/dj_installer.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">DJ Controller</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/serving_tray.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Serving Trays</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/other_advert.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Other advertising</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/light_boxes.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Light Boxes</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 underline" href="#">   
+                                                            More
+                                                        </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                
+
+                            </div>
+                                                                
+                        </div>
+
+                    </div>
+                    <div class="inline-block h-[360px]" id="tab_title" onmouseover="tab_show()" onmouseout="tab_hide()">
+                        <button class="tab-title font-semibold px-4 rounded inline-flex items-center">
+                            <span >Featured selections</span>
+                        </button>
+                        <div id="animated_tab_content" class="animated-tab-content h-[310px] bg-white border-t-1 border-solid border-[#ddd] absolute left-0 top-24 w-full overflow-hidden z-50 hidden cursor-pointer">
+                            <div class="flex gap-10 justify-start pl-[350px] my-20">
+                                <a href="#" class="tab-content" target="_blank">
+                                    <div class="featured-item border-[1px] border-solid border-[#ddd] flex flex-col text-[#222] w-[300px] h-[150px] gap-3 py-10 items-center rounded-2xl">
+                                        <div>
+                                            <i style='font-size:40px; line-height: 40px; margin-bottom: 14px;' class='fab'>&#xf17b;</i>
+                                        </div> 
+                                        <div>Top ranking</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tab-content" target="_blank">
+                                    <div class="featured-item border-[1px] border-solid border-[#ddd] flex flex-col text-[#222] w-[300px] h-[150px] gap-3 py-10 items-center rounded-2xl">
+                                        <div>
+                                            <i style='font-size:40px; line-height: 40px; margin-bottom: 14px;' class='fab'>&#xf17b;</i>
+                                        </div> 
+                                        <div>New Arrivals</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tab-content" target="_blank">
+                                    <div class="featured-item border-[1px] border-solid border-[#ddd] flex flex-col text-[#222] w-[300px] h-[150px] gap-3 py-10 items-center rounded-2xl">
+                                        <div>
+                                            <i style='font-size:40px; line-height: 40px; margin-bottom: 14px;' class='fab'>&#xf17b;</i>
+                                        </div> 
+                                        <div>Saving Spotlights</div>
+                                    </div>
+                                </a>
+                                <div class="tab-content border-l-[1px] border-gray-300 border-solid ml-5">
+                                    <div class="pl-7 flex flex-col gap-5 text-[#222] ">
+                                        <a href="#"> Sample Center </a>
+                                        <a href="#"> Trade shows</a>
+                                        <a href="#">Tips</a>
+                                        <a href="#">LIVE</a>
+                                        <a href="#">Global suppliers</a>  
+                                    </div>
+                                                                        
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="inline-block h-[360px]" id="trade_title" onmouseover="trade_show()" onmouseout="trade_hide()">
+                        <button class="trade-title font-semibold px-4 rounded inline-flex items-center">
+                            <span >Trade Assurance</span>
+                        </button>
+                        <div id="trade_tab_content" class="animated-tab-content h-[360px] bg-white border-t-1 border-solid border-[#ddd] absolute left-0 top-24 w-full overflow-hidden z-50 hidden cursor-pointer">
+                            <div class="flex gap-10 justify-start pl-[350px] my-10">
+                                <div class="w-1/3 flex flex-col py-14">
+                                    <div>
+                                        <img src="/src/img/trade_assurance_black.svg">
+                                    </div>
+                                    <div class="text-3xl font-semibold leading-10 mt-7 mb-10">
+                                        Enjoy protection from payment to delivery.
+                                    </div>
+                                    <div class="hover:cursor-pointer">
+                                        <button class="bg-[#f60] rounded-full px-8 py-2 hover:bg-[#713d1b]">
+                                            <span class="text-sm font-bold pl-2 text-white">Learn more</span>
+                                        </button>
+                                    </div> 
+                                </div>
+                                <div class="w-2/3 flex flex-wrap gap-10">
+                                    <a href="#" class="tab-content" target="_blank">
+                                        <div class="featured-item border-[1px] border-solid border-[#ddd] flex text-[#222] w-[350px] h-[120px] gap-3 py-10 items-center rounded-2xl bg-gray-50">
+                                            <div class="pl-5">
+                                                <img src="/src/img/safe.svg">
+                                            </div> 
+                                            <div class="font-semibold text-sm">Save & easy payment</div>
+                                            <div><i style='font-size:24px' class='fas'>&#xf061;</i></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="tab-content" target="_blank">
+                                        <div class="featured-item border-[1px] border-solid border-[#ddd] flex text-[#222] w-[350px] h-[120px] gap-3 py-10 items-center rounded-2xl bg-gray-50">
+                                            <div class="pl-5">
+                                                <img src="/src/img/safe.svg">
+                                            </div> 
+                                            <div class="font-semibold text-sm">Money-back policy</div>
+                                            <div><i style='font-size:24px' class='fas'>&#xf061;</i></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="tab-content" target="_blank">
+                                        <div class="featured-item border-[1px] border-solid border-[#ddd] flex text-[#222] w-[350px] h-[120px] gap-3 py-10 items-center rounded-2xl bg-gray-50">
+                                            <div class="pl-5">
+                                                <img src="/src/img/safe.svg">
+                                            </div> 
+                                            <div class="font-semibold text-sm">Shipping & logistics services</div>
+                                            <div><i style='font-size:24px' class='fas'>&#xf061;</i></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="tab-content" target="_blank">
+                                        <div class="featured-item border-[1px] border-solid border-[#ddd] flex text-[#222] w-[350px] h-[120px] gap-3 py-10 items-center rounded-2xl bg-gray-50">
+                                            <div class="pl-5">
+                                                <img src="/src/img/safe.svg">
+                                            </div> 
+                                            <div class="font-semibold text-sm">After-sales protections</div>
+                                            <div><i style='font-size:24px' class='fas'>&#xf061;</i></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="s-main">Buyer Central</div>
+                    <div class="s-main">Become a supplier</div>
+                    <div class="s-main">Help Center</div>
+                    <div class="s-main">Get the app</div>
+                </div>
+            </div>
+        
+            </div>
+        </div>
+    </div>
+        <!-- </div> -->
+    <!-- Header Content -->
+    <div class="content-container">
+            <div class="audio flex items-center">
+                <img src="/src/img/audio.png" alt="" srcset="">
+                <span class="text-xl">Learn about Alibaba.com</span>
+            </div>
+            <div class="mainTitle text-6xl/tight tracking-wide font-bold">The leading B2B ecommerce <br> platform for global trade</div>
+            <div class="search relative">
+                <input class="px-5 py-4 mt-4 rounded-full w-full" type="text" placeholder="bell tent flooring" maxlength="50" value>
+                <!-- <div class="ds-dot-element ife-cdn-search-bar-picture iconfont" data-appeared="true"></div> -->
+                <div class="camera absolute right-36 bottom-4 hover:cursor-pointer">
+                    <i class="fa-solid fa-camera text-black text-xl"></i>
+                </div>
+                <div class="absolute right-2 bottom-0.5 hover:cursor-pointer">
+                    <button class="px-6 py-3 bg-[#f60] rounded-full">
+                        <i class="fa-regular fa-magnifying-glass text-lg font-bold"></i>
+                        <span class="text-base font-bold pl-2">Search</span>
+                    </button>
+                </div>      
+            </div>
+    </div>
+    <div class="frequent-search flex items-center text-white relative -bottom-28 left-56">
+            <span class="text-lg mr-6">Frequently searched:</span>
+            <button class="mx-3 px-5 py-2 border rounded-full text-sm cursor-pointer">
+                bell tend flooring
+            </button>
+            <button class="mx-3 px-5 py-2 border rounded-full text-sm cursor-pointer">
+                camping map
+            </button>
+            <button class="mx-3 px-5 py-2 border rounded-full text-sm cursor-pointer">
+                ssd 240gb
+            </button>
+            <button class="mx-3 px-5 py-2 border rounded-full text-sm cursor-pointer">
+                ssd 512gb
+            </button>            
+    </div>   
+  </div> 
+  <!-- Nav Container -->
+  <div class="bg-[#51200b]">
+    <div class="nav-container flex flex-wrap">
+        <div class="nav-cube">
+            <div class="icon">
+                <img src="../src/img/icon_1.avif" alt="" srcset="">
+            </div>
+            <div class="title-container font-semibold text-2xl text-white leading-7">Millions of business offerings</div>
+            <div class="content text-white text-base">
+                Explore products and suppliers for your business from millions of offerings worldwide.
+            </div>
+        </div>
+        <div class="nav-cube">
+            <div class="icon">
+                <img src="../src/img/icon_2.avif" alt="" srcset="">
+            </div>
+            <div class="title-container font-semibold text-2xl text-white leading-7">Assured quality and transactions</div>
+            <div class="content text-white text-base">
+                Ensure production quality from verified suppliers, with your orders protected from payment to delivery.
+            </div>
+        </div>
+        <div class="nav-cube">
+            <div class="icon">
+                <img src="../src/img/icon_3.avif" alt="" srcset="">
+            </div>
+            <div class="title-container font-semibold text-2xl text-white leading-7">One-stop trading solution</div>
+            <div class="content text-white text-base">
+                Order seamlessly from product/supplier search to order management, payment, and fulfillment.
+            </div>
+        </div>
+        <div class="nav-cube">
+            <div class="icon">
+                <img src="../src/img/icon_4.avif" alt="" srcset="">
+            </div>
+            <div class="title-container font-semibold text-2xl text-white leading-7">Personalized trading experience</div>
+            <div class="content text-white text-base">
+                Get curated benefits, such as discounted samples and dedicated support, tailored to your business growth stage.
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Category -->
+  <div class="category-wrapper bg-white py-28">
+    <div class="industry-category">
+        <!-- category info -->
+        <div class="category-info flex justify-between">
+            <span class="title-text text-6xl/normal">Explore millions of offerings tailored to your business needs</span>
+            <div class="category-number flex flex-wrap">
+                <div class="number-item w-1/2">
+                    <span class="text-[#f60] text-4xl font-medium tracking-tighter leading-relaxed">200M+</span>
+                    <p class="text-[#51200b] text-xl leading-7">products</p>
+                </div>
+                <div class="number-item w-1/2">
+                    <span class="text-[#f60] text-4xl font-medium tracking-tighter leading-relaxed">200K+</span>
+                    <p class="text-[#51200b] text-xl leading-7">suppliers</p>
+                </div>
+                <div class="number-item w-1/2">
+                    <span class="text-[#f60] text-4xl font-medium tracking-tighter leading-relaxed">5900</span>
+                    <p class="text-[#51200b] text-xl leading-7">product categories</p>
+                </div>
+                <div class="number-item w-1/2">
+                    <span class="text-[#f60] text-4xl font-medium tracking-tighter leading-relaxed">200+</span>
+                    <p class="text-[#51200b] text-xl leading-7">countries and regions</p>
+                </div>
+            </div>
+        </div>
+        <!-- category list -->
+        <div class="industry-list relative top-0">
+            <div dir="ltr" class="next-slick next-slick-inner next-slick-hoz relative h-[500px]">
+                <div class="next-slick-container next-slick-initialized">
+                    <div class="next-slick-list">
+                        <div class="next-slick-track absolute top-0 left-0 block">
+                            <div data-index="-8" class="next-slick-slide" style="width: 180px;"></div>
+                            <div data-index="-7" class="next-slick-slide" style="width: 180px;"></div>
+                            <div data-index="-7" class="next-slick-slide" style="width: 180px;"></div>
+                            <div data-index="-6" class="next-slick-slide" style="width: 180px;"></div>
+                            <div data-index="-5" class="industry-row next-slick-slide" style="width: 180px;"></div>
+                            <div data-index="-4" class="industry-row next-slick-slide" style="width: 180px;"></div>
+                            <div data-index="-3" class="industry-row next-slick-slide" style="width: 180px;"></div>
+                            <div data-index="-2" class="industry-row next-slick-slide" style="width: 180px;"></div>
+                            <div data-index="-1" class="industry-row next-slick-slide" style="width: 180px;">
+                                <a class="circle-element" title="Power Transmission" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/power_transmit.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Power Transmission</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Fabrication Services" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/fabrication.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Fabrication Services</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="industry-row next-slick-slide" data-index="0" tabindex="-1" aria-posinset="0" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Agriculture" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/agriculture.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Agriculture</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Environment" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/environment.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Environment</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="industry-row next-slick-slide" data-index="1" tabindex="-1" aria-posinset="1" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Consumer Electronics" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/consumer-electronic.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Consumer Electronics</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Apparels and Accessories" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/accessories.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Apparels and Accessories</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="industry-row next-slick-slide" data-index="2" tabindex="-1" aria-posinset="2" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Home and Garden" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/home_garden.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Home & Garden</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Sports & Entertainment" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/sports.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Sports & Entertainment</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="3" tabindex="-1" aria-posinset="3" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Industrial Machinery" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/industrial.png">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Industrial Machinery</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Beauty" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/beauty.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Beauty</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="4" tabindex="-1" aria-posinset="4" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Mother, Kids & Toys" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/kids.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Mother, Kids & Toys</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Packing & Printing" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/packaging.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Packing & Printing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="5" tabindex="-1" aria-posinset="5" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Jewelry, Eyewear" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/jewelry.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Jewelry, Eyewear</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Shoes & Accessories" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/shoes.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Shoes & Accessories</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="6" tabindex="-1" aria-posinset="6" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Vehicle Parts & Accessories" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/vehicle.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Vehicle Parts & Accessories</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Furniture" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/furniture.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Furniture</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="7" tabindex="-1" aria-posinset="7" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Luggage, Bags & Cases" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/luggage.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Luggage, Bags & Cases</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Tools & Hardware" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/tools.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Tools & Hardware</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+
+                            <div class="industry-row next-slick-slide" data-index="8" tabindex="-1" aria-posinset="8" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Vehicle Accessories" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/vehicle_accessories.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Vehicle Accessories</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Gifts & Crafts" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/gifts.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Gifts & Crafts</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="industry-row next-slick-slide" data-index="9" tabindex="-1" aria-posinset="9" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Health Care" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/health_care.png">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Health Care</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="School & Office Supplies" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/schools_tools.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">School & Office Supplies</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="industry-row next-slick-slide" data-index="10" tabindex="-1" aria-posinset="10" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Electrical Equipments" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/electrical.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Electrical Equipments</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Renewable Energy" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/renewable_energy.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Renewable Energy</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="11" tabindex="-1" aria-posinset="11" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Construction & Building" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/buildings.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Construction & Building</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Medical Devices & Supplies" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/medical.png">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Medical Devices & Supplies</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="12" tabindex="-1" aria-posinset="12" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Electronic Components" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/electronic.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Electronic Components</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Pet Supplies" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/pet_supplies.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Pet Supplies</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="13" tabindex="-1" aria-posinset="13" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Security" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/security.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Security</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Chemicals" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/chemicals.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Chemicals</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="14" tabindex="-1" aria-posinset="14" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Food & Beverage" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/food_beverage.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Food & Beverage</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Testing Instrument" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/testing_instrument.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Testing Instrument</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="15" tabindex="-1" aria-posinset="15" aria-setsize="22" role="listitem" dir="ltr" style="outline: none; width: 180px;">
+                                <a class="circle-element" title="Business Services" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/business_services.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Business Services</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Fabric & Textile Raw Materials" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/textile.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Fabric & Textile Raw Materials</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+
+                            <div class="industry-row next-slick-slide" data-index="16" style="width: 180px;">
+                                <a class="circle-element" title="Agriculture" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/agriculture.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Agriculture</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Environment" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/environment.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Environment</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="industry-row next-slick-slide" data-index="17" style="width: 180px;">
+                                <a class="circle-element" title="Consumer Electronics" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/consumer-electronic.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Consumer Electronics</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Apparels and Accessories" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/accessories.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Apparels and Accessories</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="industry-row next-slick-slide" data-index="18" style="width: 180px;">
+                                <a class="circle-element" title="Home and Garden" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/home_garden.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Home & Garden</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Sports & Entertainment" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/sports.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Sports & Entertainment</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="19" style="width: 180px;">
+                                <a class="circle-element" title="Industrial Machinery" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/industrial.png">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Industrial Machinery</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Beauty" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/beauty.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Beauty</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="20" style="width: 180px;">
+                                <a class="circle-element" title="Mother, Kids & Toys" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/kids.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Mother, Kids & Toys</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Packing & Printing" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/packaging.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Packing & Printing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="21" style="width: 180px;">
+                                <a class="circle-element" title="Jewelry, Eyewear" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/jewelry.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Jewelry, Eyewear</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Shoes & Accessories" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/shoes.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Shoes & Accessories</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            <div class="industry-row next-slick-slide" data-index="22" style="width: 180px;">
+                                <a class="circle-element" title="Vehicle Parts & Accessories" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/vehicle.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Vehicle Parts & Accessories</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="circle-element" title="Furniture" href="accessories.html" target="_blank">
+                                    <div class="industry-item">
+                                        <img class="h-12 w-12" src="/src/img/furniture.avif">
+                                        <div class="industry-name flex flex-wrap items-center h-8 justify-center">
+                                            <span class="text-sm font-normal text-[#222] leading-4 overflow-hidden px-1 text-center w-full">Furniture</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> 
+                            
+                        </div>
+                    </div> 
+                    <div class="list_pre flex justify-start absolute bottom-0 left-0 w-24 h-full bg-gray-50 items-center">
+                        <img src="/src/img/previous.avif" class="cursor-pointer h-16 w-16 absolute top-32" onclick="list_pre()">
+                    </div>
+                    <div class="list_after flex justify-end absolute bottom-0 -right-3 w-24 h-full bg-gray-50 items-center">
+                        <img src="/src/img/next.avif" class="cursor-pointer h-16 w-16 absolute top-32 right-3 rotate-180" onclick="list_after()">
+                    </div>
+                    <!-- <div class="previous flex absolute top-0 items-center bg-gray-50 h-[120px]" onclick="previous()">
+                        <div class="w-[72px]">
+                            <img src="/src/img/previous.avif" class="absolute bottom-7 cursor-pointer h-16 w-16">
+                        </div>
+                    </div>
+                    <div class="next flex absolute top-0 right-0 items-center bg-gray-50 h-[120px]" onclick="next()">
+                        <div class="w-[72px]">
+                            <img src="/src/img/previous.avif" class="absolute bottom-7 cursor-pointer h-16 w-16 rotate-180">
+                        </div>
+                    </div> -->
+                </div>
+            </div> 
+        </div>     
+    </div>
+  </div>
+  <!-- Business Floor -->
+  <div class="bg-[#e6e4e4] w-full">
+    <div class="w-[1440px] h-[1008px] text-[#222] mx-auto">
+        <div class="text-4xl leading-10 mb-14 pt-20 font-semibold">Discover your next business oportunity</div>
+        <div class="all-floor flex justify-between">
+            <div class="ranking-box01 w-[459px]">
+                <div class="flex justify-between">
+                    <div class="text-2xl font-semibold">Top ranking</div>
+                    <a class="text-lg text-[#222] underline">View More</a>
+                </div>
+                <div class="photo w-full h-[700px] relative">
+                    <div class="mySlides fade absolute w-[459px] bg-gray-100 rounded-lg h-[700px] mt-4">
+                        <div class="p-5">
+                            <div class="text-xl leading-9 text-[#222] font-medium">
+                                Most popular
+                            </div>
+                            <div class="text-base text-gray-500">
+                                Rubber Smart Watches
+                            </div>                       
+                        </div>
+                        <div class="arrival-box flex flex-wrap justify-center pb-4">
+                            <div>
+                                <img src="/src/img/watch.webp" class="w-[400px] h-auto rounded-xl">
+                            </div>
+                        </div>
+                        <div class= "w-[410px] mx-auto mt-3 flex justify-between">
+                                    <img src="/src/img/watch-sub01.webp" class="w-32 h-auto rounded-xl">
+                                    <img src="/src/img/watch_sub03.webp" class="w-32 h-auto rounded-xl">
+                                    <img src="/src/img/watch_sub02.webp" class="w-32 h-auto rounded-xl">               
+                        </div>                    
+                    </div>
+                    <div class="mySlides fade absolute w-[459px] bg-gray-100 rounded-lg h-[700px] mt-4 hidden">
+                        <div class="p-5">
+                            <div class="text-xl leading-9 text-[#222] font-medium">
+                                Most popular
+                            </div>
+                            <div class="text-base text-gray-500">
+                                Clothes
+                            </div>                       
+                        </div>
+                        <div class="arrival-box flex flex-wrap justify-center pb-4">
+                            <div>
+                                <img src="/src/img/slide_img01.webp" class="w-[400px] h-auto rounded-xl">
+                            </div>
+                        </div>
+                        <div class= "w-[410px] mx-auto mt-3 flex justify-between">
+                                    <img src="/src/img/slide_simg01.webp" class="w-32 h-auto rounded-xl">
+                                    <img src="/src/img/slide_simg02.webp" class="w-32 h-auto rounded-xl">
+                                    <img src="/src/img/slide_simg04.webp" class="w-32 h-auto rounded-xl">               
+                        </div>                    
+                    </div>
+                    <div class="mySlides fade absolute w-[459px] bg-gray-100 rounded-lg h-[700px] mt-4 hidden">
+                        <div class="p-5">
+                            <div class="text-xl leading-9 text-[#222] font-medium">
+                                Most popular
+                            </div>
+                            <div class="text-base text-gray-500">
+                                Sweater
+                            </div>                       
+                        </div>
+                        <div class="arrival-box flex flex-wrap justify-center pb-4">
+                            <div>
+                                <img src="/src/img/slide_img02.webp" class="w-[400px] h-auto rounded-xl">
+                            </div>
+                        </div>
+                        <div class= "w-[410px] mx-auto mt-3 flex justify-between">
+                                    <img src="/src/img/slid_simg05.jpg" class="w-32 h-auto rounded-xl">
+                                    <img src="/src/img/slide_simg06.webp" class="w-32 h-auto rounded-xl">
+                                    <img src="/src/img/slide_simg01.webp" class="w-32 h-auto rounded-xl">               
+                        </div>                    
+                    </div>
+                    <div class="absolute left-0 bottom-80">
+                        <i class="photo_pre z-10 fas fa-angle-left text-2xl text-[#666] bg-white border-2 shadow-lg rounded-full w-11 h-11 text-center pt-1 cursor-pointer" onclick="plusSlides(-1)"></i>
+                    </div>
+                    <div class="absolute right-0 bottom-80">
+                        <i class="photo_next z-10 fas fa-angle-right text-2xl text-[#666] bg-white border-2 shadow-lg rounded-full w-11 h-11 text-center pt-1 cursor-pointer" onclick="plusSlides(1)"></i>
+                    </div>
+                    <div class="absolute -bottom-2 left-52 text-center">
+                        <span class="dot cursor-pointer h-[15px] w-[15px] my-1 bg-[#bbb] rounded-full inline-block hover:bg-[#717171]" onclick="currentSlide(1)"></span>
+                        <span class="dot cursor-pointer h-[15px] w-[15px] my-1 bg-[#bbb] rounded-full inline-block hover:bg-[#717171]" onclick="currentSlide(2)"></span>
+                        <span class="dot cursor-pointer h-[15px] w-[15px] my-1 bg-[#bbb] rounded-full inline-block hover:bg-[#717171]" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="ranking-box02 w-[459px]">
+                <div class="flex justify-between">
+                    <div class="text-2xl font-semibold">New Arrivals</div>
+                    <a class="text-lg text-[#222] underline">View More</a>
+                </div>
+                <div class="h-[988px]">
+                    <div class="bg-gray-100 rounded-lg h-auto mt-4">
+                        <div class="text-xl leading-9 text-[#222] font-medium p-5">
+                        74,500+ products added today
+                        </div>
+                        <div class="arrival-box flex flex-wrap justify-center gap-5 pb-4">
+                            <div>
+                                <img src="/src/img/product-box01.webp" class="w-48 h-auto rounded-xl">
+                            </div>
+                            <div>
+                                <img src="/src/img/product-box02.webp" class="w-48 h-48 rounded-xl">
+                            </div>
+                            <div>
+                                <img src="/src/img/product-box03.webp" class="w-48 h-auto rounded-xl">
+                            </div>
+                            <div>
+                                <img src="/src/img/product-box04.webp" class="w-48 h-auto rounded-xl">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-gray-100 rounded-lg h-48 mx-auto mt-3">
+                        <div class="w-[410px] h-40 flex place-content-center pt-8">
+                            <div>
+                                <img src="/src/img/lunch_img.webp" class="w-32 h-auto rounded-xl">
+                            </div>
+                            <div class="flex flex-col justify-center pl-4">
+                                <div class="text-xl font-semibold text-[#222]">New this week</div>
+                                <div class="text-sm text-gray-500">Products from verified suppliers only</div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="ranking-box03 w-[459px]">
+                <div class="flex justify-between">
+                    <div class="text-2xl font-semibold">Saving Spotlights</div>
+                    <a class="text-lg text-[#222] underline">View More</a>
+                </div>
+                <div class="h-[988px]">
+                    <div class="bg-gray-100 rounded-lg h-48 mx-auto mt-4">
+                        <div class="w-[410px] h-40 flex place-content-center pt-8">
+                            <div>
+                                <img src="/src/img/underwear.webp" class="w-32 h-auto rounded-xl">
+                            </div>
+                            <div class="flex flex-col justify-center pl-4">
+                                <div class="text-xl font-semibold text-[#222]">Lowest price in 180 days</div>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="bg-gray-100 rounded-lg h-auto mt-3">
+                        <div class="text-xl leading-9 text-[#222] font-medium p-5">
+                            <a href="#">
+                                Deals on best sellers
+                            </a>
+                        </div>
+                        <div class="arrival-box flex flex-wrap justify-center gap-5 pb-4">
+                            <div>
+                                <a href="#">
+                                    <img src="/src/img/lady_wear.webp" class="w-[400px] pb-1 h-auto rounded-xl">
+                                </a>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+  <!-- Factory Floor -->
+  <div class="bg-white w-full h-auto">
+    <div class="w-[1440px] h-auto text-[#222] mx-auto">
+        <div class="mb-20">
+        <div class="text-4xl leading-10 mb-14 pt-20 font-semibold">Source direct-from-factory</div>
+        <div class="all-floor flex justify-between">
+            <div class="flex-col relative">
+                <a href="#">
+                    <div>
+                        <img src="/src/img/factory01.avif" class="rounded-2xl mt-4 w-[459px]">
+                    </div>                  
+                    <div class="text-xl font-semibold text-white absolute top-10 left-8">Connect with top-ranking manufacturers</div>
+                    <div class="absolute bottom-10 left-8">
+                        <a class="text-base text-white underline">View More</a>
+                    </div>
+                </a> 
+            </div>      
+            <div class="flex-col relative">
+                <a href="#">
+                    <div>
+                        <img src="/src/img/factory_03.avif" class="rounded-2xl mt-4 w-[459px]">
+                    </div>                  
+                    <div class="text-xl font-semibold text-white absolute top-10 left-8">Take factory live tours</div>
+                    <div class="absolute bottom-10 left-8">
+                        <a class="text-base text-white underline">View More</a>
+                    </div>
+                </a> 
+            </div>  
+            <div class="flex-col relative">
+                <a href="#">
+                    <div>
+                        <img src="/src/img/factory_03.avif" class="rounded-2xl mt-4 w-[459px]">
+                    </div>                  
+                    <div class="text-xl font-semibold text-white absolute top-10 left-8">Get samples</div>
+                    <div class="absolute bottom-10 left-8">
+                        <a class="text-base text-white underline">View More</a>
+                    </div>
+                </a> 
+            </div>             
+        </div>
+        </div>  
+    </div>
+  </div>
+  <!-- Security Floor -->
+  <div class="w-full bg-[#49271c] h-[946px] text-white">
+    <div class="bg-[url('/src/img/security_floorBg.avif')] bg-[length:1920px_946px] bg-no-repeat m-auto">
+        <div class="w-[1440px] h-[936px] mx-auto">
+            <div class="text-6xl leading-normal pt-36 font-bold mb-24">Trade with confidence from production<br> quality to purchase protection</div>
+            <div class="s-box flex justify-between">
+                <div class="security-box01 bg-[hsla(0,0%,100%,.11)] h-96 w-[690px] rounded-3xl">
+                    <div class="w-[590px] mx-auto">
+                        <div class="text-xl leading-loose font-medium pt-11">
+                            Ensure production quality with
+                        </div>
+                        <div class="py-3">
+                            <img src="/src/img/verified_suppliers.png" class="w-96">
+                        </div>
+                        <div class="text-base pb-7">
+                            Connect with a variety of suppliers, including Custom Manufacturers, Brand Holders, and Multispecialty Suppliers, that have verified credentials and capabilities.
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center border-2 rounded-2xl w-48 bg-[#49271c]">
+                                <div class="py-1 pl-4">
+                                    <img src="/src/img/video.png" class="w-8 h-auto">
+                                </div>
+                                <div class="py-1">Watch the video</div>
+                            </div>
+                            <div><a href="#" class="underline pl-7">Learn more</a></div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="security-box02 bg-[hsla(0,0%,100%,.11)] h-96 w-[690px] rounded-3xl">
+                    <div class="w-[590px] mx-auto">
+                        <div class="text-xl leading-loose font-medium pt-11">
+                            Protect your purchases with
+                        </div>
+                        <div class="py-3">
+                            <img src="/src/img/trade_assurance.avif" class="w-96">
+                        </div>
+                        <div class="text-base pb-7">
+                            Source confidently for your business knowing that orders made through Trade Assurance on Alibaba.com are protected, from payment to delivery and after-sales.
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center border-2 rounded-2xl w-48 bg-[#49271c]">
+                                <div class="py-1 pl-4">
+                                    <img src="/src/img/video.png" class="w-8 h-auto">
+                                </div>
+                                <div class="py-1">Watch the video</div>
+                            </div>
+                            <div><a href="#" class="underline pl-7">Learn more</a></div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+  <!-- Service Floor -->
+  <div class="bg-white text-black w-full h-[930px]">
+    <div class="w-[1440px] h-auto text-[#222] mx-auto">
+        <div class="text-[65px] leading-tight mt-20">
+            Streamline ordering from search to<br> fulfillment, all in one place
+        </div>
+        <div class="mt-20">
+            <div class="flex-col justify-start relative">
+                <div class="matches01 service01 flex gap-20 absolute top-0" id="matches" onmouseover="matches_show(0)">
+                    <div class="cursor-pointer flex w-[550px]">
+                        <div id="111"></div>
+                        <div>
+                            <img src="/src/img/search.avif" class="w-16 border rounded-full">
+                        </div>
+                        <div class="flex-col">
+                            <div class="text-3xl pl-4">Search for matches</div>
+                            <div class="matches_content block" id="matches-content ">
+                                <span class="text-gray-500 text-base pl-4 mt-2 block">Search and filter from millions of product and supplier offerings to find the matching ones for your business.</span> 
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="matches_content block w-[800px]" id="matches-content">
+                        <img src="/src/img/service01.avif" class="block">
+                    </div>          
+                </div>                    
+                <div class="matches02 service02 absolute top-28" id="matches" onmouseover="matches_show(2)">
+                    <div class="flex justify-between">
+                        <div class="cursor-pointer flex w-[550px]" id="identify">
+                            <div>
+                                <img src="/src/img/identify.png" class="w-16 border rounded-full">
+                            </div>
+                            <div class="flex-col">
+                                <div class="text-3xl pl-4">Identify the right one</div>
+                                <div class="matches_content text-gray-500 text-base pl-4 mt-2 hidden" id="matches-content">
+                                    Evaluate product quality and supplier capabilities easily and efficiently through verified inspections and digital sourcing tools.
+                                </div>
+                            </div>                    
+                        </div>
+                        <div class="matches_content w-[800px] ml-[90px] -mt-16 hidden" id="matches-content">
+                            <img src="/src/img/service02.avif" class="w-full">
+                        </div>
+                    </div> 
+                </div>
+                <div class="matches03 service03 absolute top-56" id="matches" onmouseover="matches_show(4)">
+                    <div class="flex justify-between">
+                        <div class="cursor-pointer flex w-[550px]" id="identify">
+                            <div>
+                                <img src="/src/img/connect.png" class="w-16 border rounded-full">
+                            </div>
+                            <div class="flex-col">
+                                <div class="text-3xl pl-4">Pay with confidence</div>
+                                <div class="matches_content text-gray-500 text-base pl-4 mt-2 hidden" id="matches-content">
+                                    Pay for your order in over 20 currencies via 20+ secure payment methods, including flexible payment terms.
+                                </div>
+                            </div>                    
+                        </div>
+                        <div class="matches_content w-[800px] ml-[96px] -mt-44 hidden" id="matches-content">
+                            <img src="/src/img/service03.avif" class="w-full">
+                        </div>
+                    </div> 
+                </div>
+                <div class="matches04 service04 absolute top-[336px]" id="matches" onmouseover="matches_show(6)">
+                    <div class="flex justify-between">
+                        <div class="cursor-pointer flex w-[550px]" id="identify">
+                            <div>
+                                <img src="/src/img/location.avif" class="w-16 border rounded-full">
+                            </div>
+                            <div class="flex-col">
+                                <div class="text-3xl pl-4">Fulfill with transparency</div>
+                                <div class="matches_content text-gray-500 text-base pl-4 mt-2 hidden" id="matches-content">
+                                    Get your logistics needs fulfilled with real-time tracking for 26,000+ routes across 220 countries and regions powered by Alibaba.com Logistics.
+                                </div>
+                            </div>                    
+                        </div>
+                        <div class="matches_content w-[800px] ml-[96px] -mt-72 hidden" id="matches-content">
+                            <img src="/src/img/service04.avif" class="w-full">
+                        </div>
+                    </div> 
+                </div>
+                <div class="matches05 service05 absolute top-[460px]" id="matches" onmouseover="matches_show(8)">
+                    <div class="flex justify-between">
+                        <div class="cursor-pointer flex w-[550px]" id="identify">
+                            <div>
+                                <img src="/src/img/manage.avif" class="w-16 border rounded-full">
+                            </div>
+                            <div class="flex-col">
+                                <div class="text-3xl pl-4">Manage with ease</div>
+                                <div class="matches_content text-gray-500 text-base pl-4 mt-2 hidden" id="matches-content">
+                                    Check order status, manage suppliers, track payments and shipments, and contact after-sales support all via My Alibaba.
+                                </div>
+                            </div>                    
+                        </div>
+                        <div class="matches_content w-[800px] ml-[96px] -mt-[415px] hidden" id="matches-content">
+                            <img src="/src/img/service05.avif" class="w-full">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Benefit Floor -->
+  <div class="bg-[#f7f2f0] w-full h-auto relative">
+        <div class="w-[1440px] h-auto text-[#222] mx-auto">
+            <div class="text-[#51200b] text-6xl text-center leading-10 mb-14 pt-20 font-semibold">Personalize your trading experience with curated benefits</div>
+            <div class="text-[#666] text-xl text-center leading-6 font-semibold">Grow and succeed with curated benefits offered by Alibaba.com, whether you are a startup business needing the essentials to start sourcing or a well-established enterprise looking for tools and services for more complex orders.</div>
+            <div class="mt-8 benefit-box bg-white rounded-xl h-[250px]">
+                <div class="px-36 flex">
+                    <div class="mt-10">
+                        <img src="/src/img/person01.avif" class="border rounded-full w-[176px] h-[176px]">
+                    </div>
+                    <div class="flex-col text-[232px] mt-24 ml-8">
+                        <div class="text-2xl leading-8">Eva Jane</div>
+                        <div class="text-base leading-5 mt-3">Founder of Eva Jane Beauty</div>
+                    </div>
+                    <div class="text-2xl font-semibold w-[646px] mt-16 ml-32">
+                        “As an entrepreneur who is deeply involved in the Beauty industry, I have been very devoted to creating my original products. Alibaba.com has been my trusted partner in this process.”
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+  <!-- Sign Up Floor -->
+  <div class="bg-[url('/src/img/signUpBg.avif')] bg-[length:1920px_456px] bg-no-repeat m-auto">
+    <div class="w-[1440px] h-[456px] text-white mx-auto text-center">
+            <div class="text-6xl leading-[70px] font-semibold pt-40">
+                Ready to get started?
+            </div>
+            <div class="text-xl leading-7 pt-10">
+                Explore millions of products from trusted suppliers by signing up today!
+            </div>
+            <div class="mt-10 cursor-pointer">
+                <a class="bg-[#f60] font-medium hover:bg-blue-700 text-white py-6 px-16 rounded-full h-16 leading-[60px]">
+                    Sign Up
+                </a>   
+            </div>                     
+    </div>
+  </div>
+  <!-- Vision Floor -->
+  <div class="bg-white w-full h-auto">
+    <div class="w-[1440px] h-auto mx-auto my-auto pb-20">
+        <div class="text-[#51200b] text-6xl font-semibold leading-[70px] mt-32 text-center">
+            Empowering businesses through global trade
+        </div>
+        <div class="text-[#666] text-xl leading-7 mt-5 text-center">
+            Alibaba.com offers one-stop B2B trading solutions for global small and medium-sized businesses, empowering them to transform through digital trade, grasp opportunities, and accelerate growth internationally.
+        </div>
+        <div class="flex justify-between mt-8">
+            <div class="flex-col bg-[url('/src/img/our_mission.avif')] bg-no-repeat bg-center rounded-2xl bg-[length:704px__600px] h-[600px] w-[704px] relative">
+               <div class="absolute left-5 bottom-8">
+                    <div class="text-[#f60] text-base mb-1 font-medium leading-7">
+                        OUR MISSION
+                    </div>
+                    <div class="text-4xl leading-10 text-white font-semibold">
+                        Make it easy to do business anywhere.
+                    </div>
+               </div>                
+            </div>
+            <div class="flex flex-col justify-between h-[600px]">
+                <div class="flex justify-between bg-[url('/src/img/our_location.avif')] bg-no-repeat bg-center rounded-2xl bg-[length:704px__323px] h-[323px] w-[704px] relative">
+                    <div class="flex-col absolute bottom-6 left-9 w-[450px]">
+                        <div class="text-[#f60] text-base mb-1 font-medium leading-7">
+                            OUR LOCATIONS
+                        </div>
+                        <div class="text-4xl leading-10 text-[#51200b] font-semibold">
+                            We have teams around the world.
+                        </div>
+                    </div>
+                    <div class="text-sm leading-5 absolute right-5 top-5 w-[126px]">
+                        Hangzhou, China<br>Paris, France<br>Munich, Germany<br>Tokyo, Japan<br>Seoul, Korea<br>London, UK<br>New York, US<br>...<br>and many other locations worldwide.
+                    </div>                    
+                </div>
+                <div class="flex bg-[url('/src/img/our_esg_promises.avif')] bg-no-repeat bg-center rounded-2xl bg-[length:704px__245px] h-[245px] w-[704px] relative">
+                    <div class="flex-col absolute bottom-5 left-9">
+                        <div class="text-[#f60] text-base mb-1 font-medium leading-7">
+                            OUR ESG PROMISES
+                        </div>
+                        <div class="text-4xl leading-10 text-white font-semibold">
+                            Responsible technology. Sustainable future.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Country Floor -->
+  <div class="bg-white w-full h-56">
+    <div class="w-[1440px] h-auto mx-auto">
+        <div>
+            <a href="#" class="cursor-pointer">
+                <div class="text-[#222] text-3xl leading-10 h-10">
+                    Find suppliers by country or region
+                </div>
+            </a>
+                <div class="country-box relative bottom-3 mt-16 w-full h-48 overflow-hidden">
+                    <!-- <div class="w-full"> overflow-x-scroll -->
+                        <div class="country_list absolute flex pl-5">
+                            <a href="#" class="country_item py-4 px-6">
+                                <div class="flex flex-col justify-center items-center w-[120px]">
+                                    <div class="bg-[#f8f8f8] rounded-full h-[66px] w-[66px] flex items-center justify-center">
+                                        <img src="/src/img/japan.png" class="w-8 h-auto">
+                                    </div>
+                                    <div class="text-[#222] text-base leading-6 text-center mt-3">Japan</div>
+                                </div>
+                            </a> <!--left-48-->
+                            <a href="#" class="country_item py-4 px-6">
+                                <div class="flex flex-col justify-center items-center w-[120px]">
+                                    <div class="bg-[#f8f8f8] rounded-full h-[66px] w-[66px] flex items-center justify-center">
+                                        <img src="/src/img/usa.avif" class="w-8 h-auto">
+                                    </div>
+                                    <div class="text-[#222] text-base leading-6 text-center mt-3">USA</div>
+                                </div>
+                            </a>
+                            <a href="#" class="country_item py-4 px-6">
+                                <div class="flex flex-col justify-center items-center w-[120px]">
+                                    <div class="bg-[#f8f8f8] rounded-full h-[66px] w-[66px] flex items-center justify-center">
+                                        <img src="/src/img/italy.webp" class="w-8 h-auto">
+                                    </div>
+                                    <div class="text-[#222] text-base leading-6 text-center mt-3">Italy</div>
+                                </div>
+                            </a>
+                            <a href="#" class="country_item py-4 px-6">
+                                <div class="flex flex-col justify-center items-center w-[120px]">
+                                    <div class="bg-[#f8f8f8] rounded-full h-[66px] w-[66px] flex items-center justify-center">
+                                        <img src="/src/img/turkey.webp" class="w-8 h-auto">
+                                    </div>
+                                    <div class="text-[#222] text-base leading-6 text-center mt-3">Turkey</div>
+                                </div>
+                            </a>
+                            <a href="#" class="country_item py-4 px-6">
+                                <div class="flex flex-col justify-center items-center w-[120px]">
+                                    <div class="bg-[#f8f8f8] rounded-full h-[66px] w-[66px] flex items-center justify-center">
+                                        <img src="/src/img/malaysia.png" class="w-8 h-auto">
+                                    </div>
+                                    <div class="text-[#222] text-base leading-6 text-center mt-3">Malaysia</div>
+                                </div>
+                            </a>
+                            <a href="#" class="country_item py-4 px-6">
+                                <div class="flex flex-col justify-center items-center w-[120px]">
+                                    <div class="bg-[#f8f8f8] rounded-full h-[66px] w-[66px] flex items-center justify-center">
+                                        <img src="/src/img/south_korea.webp" class="w-8 h-auto">
+                                    </div>
+                                    <div class="text-[#222] text-base leading-6 text-center mt-3">South Korea</div>
+                                </div>
+                            </a>
+                            <a href="#" class="country_item py-4 px-6">
+                                <div class="flex flex-col justify-center items-center w-[120px]">
+                                    <div class="bg-[#f8f8f8] rounded-full h-[66px] w-[66px] flex items-center justify-center">
+                                        <img src="/src/img/vietnam.webp" class="w-8 h-auto">
+                                    </div>
+                                    <div class="text-[#222] text-base leading-6 text-center mt-3">Vietnam</div>
+                                </div>
+                            </a>
+                            <a href="#" class="country_item py-4 px-6">
+                                <div class="flex flex-col justify-center items-center w-[120px]">
+                                    <div class="bg-[#f8f8f8] rounded-full h-[66px] w-[66px] flex items-center justify-center">
+                                        <img src="/src/img/russia.webp" class="w-8 h-auto">
+                                    </div>
+                                    <div class="text-[#222] text-base leading-6 text-center mt-3">Russia</div>
+                                </div>
+                            </a>
+                            <a href="#" class="country_item  py-4 px-6">
+                                <div class="flex flex-col justify-center items-center w-[120px]">
+                                    <div class="bg-[#f8f8f8] rounded-full h-[66px] w-[66px] flex items-center justify-center">
+                                        <img src="/src/img/thailand.png" class="w-8 h-auto">
+                                    </div>
+                                    <div class="text-[#222] text-base leading-6 text-center mt-3">Thailand</div>
+                                </div>
+                            </a>
+                        </div>
+                    <div class="previous flex absolute top-0 items-center bg-gray-50 h-[120px]" onclick="previous()">
+                        <div class="w-[72px]">
+                            <img src="/src/img/previous.avif" class="absolute bottom-7 cursor-pointer h-16 w-16">
+                        </div>
+                    </div>
+                    <div class="next flex absolute top-0 right-0 items-center bg-gray-50 h-[120px]" onclick="next()">
+                        <div class="w-[72px]">
+                            <img src="/src/img/previous.avif" class="absolute bottom-7 cursor-pointer h-16 w-16 rotate-180">
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="bg-white w-full border-t-[1px] border-solid border-[#ddd] text-[#222] text-sm leading-[18px] pt-10 ">
+    <div class="w-[1440px] px-10 mx-auto pb-8">
+        <div class="footer-links flex justify-between w-full">
+            <div>
+                <h3 class="text-base font-bold leading-6 mb-5">Get support</h3>
+                <ul>
+                    <li class="mb-5"><a href="#" target="_blank">Help Center</a></li>
+                    <li class="mb-5"><a href="#" target="_blank">Live chat</a></li>
+                    <li class="mb-5"><a href="#" target="_blank">Check order status</a></li>
+                    <li class="mb-5"><a href="#" target="_blank">Refunds</a></li>
+                    <li class="mb-5"><a href="#" target="_blank">Report abuse</a></li>                    
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-base font-bold leading-6 mb-5">Trade Assurance</h3>
+                <ul>
+                    <li class="mb-5"><a href="#" target="_blank">Safe and easy payments</a></li>  
+                    <li class="mb-5"><a href="#" target="_blank">Money-back policy</a></li> 
+                    <li class="mb-5"><a href="#" target="_blank">On-time shipping</a></li> 
+                    <li class="mb-5"><a href="#" target="_blank">After-sales protections</a></li> 
+                    <li class="mb-5"><a href="#" target="_blank">Product monitoring services</a></li>            
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-base font-bold leading-6 mb-5">Source on Alibaba.com</h3>
+                <ul>
+                    <li class="mb-5"><a href="#" target="_blank">Request for Quotation</a></li>  
+                    <li class="mb-5"><a href="#" target="_blank">Membership program</a></li> 
+                    <li class="mb-5"><a href="#" target="_blank">Alibaba.com logistics</a></li> 
+                    <li class="mb-5"><a href="#" target="_blank">Sales tax and VAT</a></li> 
+                    <li class="mb-5"><a href="#" target="_blank">Alibaba.com Reads</a></li>            
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-base font-bold leading-6 mb-5">Sell on Alibaba.com</h3>
+                <ul>
+                    <li class="mb-5"><a href="#" target="_blank">Start selling</a></li>  
+                    <li class="mb-5"><a href="#" target="_blank">Seller Central</a></li>
+                    <li class="mb-5"><a href="#" target="_blank">Become a Verified Supplier</a></li>
+                    <li class="mb-5"><a href="#" target="_blank">Partnerships</a></li>
+                    <li class="mb-5"><a href="#" target="_blank">Download the app for suppliers</a></li>                
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-base font-bold leading-6 mb-5">Get to know us</h3>
+                <ul>
+                    <li class="mb-5"><a href="#" target="_blank">About Alibaba.com</a></li>
+                    <li class="mb-5"><a href="#" target="_blank">Cooperate responsibility</a></li>
+                    <li class="mb-5"><a href="#" target="_blank">News center</a></li>
+                    <li class="mb-5"><a href="#" target="_blank">Careers</a></li>           
+                </ul>
+            </div>            
+        </div>
+        <div class="sns-app flex justify-between mt-5">
+            <div class="sns h-10 flex gap-6">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="/src/img/fb_logo.png" alt="" class="h-7">
+                </a>
+                <a href="https://www.linkin.com/" target="_blank">
+                    <img src="/src/img/instagram_logo.png" alt="" class="h-7">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="/src/img/twitter_logo.png" alt="" class="h-7">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="/src/img/insta_logo.png" alt="" class="h-7">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="/src/img/youtube_logo.png" alt="" class="h-7">
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <img src="/src/img/tiktok_logo.png" alt="" class="h-7">
+                </a>
+            </div>
+            <div class="app flex gap-5 items-center">
+                <div>
+                    Trade on the go with the  
+                    <a href="https://app.alibaba.com/" target="_blank" class="font-bold underline">Alibaba.com app</a>
+                </div>
+                <a href="https://apps.apple.com/us/app/alibaba-for-iphone/id503451073?spm=a2700.product_home_l3.home_header.42.2ce267afj7vdoC" target="_blank">
+                    <img src="/src/img/app_store.avif" class="h-10">
+                </a>
+                <a href="https://play.google.com/store/apps/details?spm=a2700.product_home_l3.home_header.43.2ce267afj7vdoC&id=com.alibaba.intl.android.apps.poseidon&referrer=pcmaindownload" target="_blank">
+                    <img src="/src/img/google_play.avif" class="h-10">
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="w-full bg-[#f4f4f4] text-[#666] flex flex-col gap-3 py-5 px-8 text-center">
+        <div>
+            <a href="#" target="_blank" class="pr-2">AliExpress</a>
+            <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">1688.com</a>
+            <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Tmall Taobao World</a>
+            <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Alipay</a>
+            <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Lazada</a>
+            <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Taobao Global</a>
+        </div>
+        <div>
+            <a href="#" target="_blank" class="pr-2">Policies and rules</a>
+            <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Legal notices</a>
+            <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Product Listing Policies</a>
+            <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Intellectural Property Protection</a>
+            <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Privacy Policy</a>
+            <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Terms of Use</a>
+            <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Integrity Compliance</a>
+        </div>
+        <div class="flex gap-3 justify-center">
+            <span>© 1999-2023 Alibaba.com. All rights reserved.
+            </span>
+            <a href="#" target="_blank" class="pl-2 flex gap-3">
+                <img src="/src/img/chinese_logo.gif" class="w-5 h-5">
+                浙公网安备 33010002000092号
+            </a>           
+            <a href="#" target="_blank" class="pl-2 flex gap-3">
+                <img src="/src/img/chinese_logo01.avif" class="w-5 h-5"> 浙B2-20120091-4</a>
+        </div>
+
+    </div>
+
+  </div>
+</body>
+
+
+</html>

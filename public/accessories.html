@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <script src="/src/js/accessories.js"></script>
+</head>
+<body class="box-border bg-gray-100 h-auto" onload="showSlides()">
+    <div class="bg-white w-full h-20 mt-5 border-b-2 border-gray-100">
+        <div class="w-[1440px] h-20 text-[#222] mx-auto flex justify-between">
+                <div class="grid items-center">
+                    <img src="/src/img/logo_alibaba.avif" class="w-56 h-auto">
+                </div>
+        
+            <div class="p-3 grid items-center">
+                <div class="border-2 border-[#f60] border-solid h-10 w-[700px] rounded-2xl">
+                    <div class="inline-block relative h-full w-full">
+                        <div>
+                            <input type="text" class="h-8 w-[500px] bg-transparent border-0" placeholder="What are you looking for...">
+                        </div>
+                        <div class="camera absolute bottom-1 right-36 hover:cursor-pointer">
+                            <i class="fa-solid fa-camera text-black text-xl"></i>
+                        </div>
+                        <div class="absolute right-0 bottom-0 hover:cursor-pointer h-full">
+                            <button class="px-5 py-1 bg-[#f60] rounded-l-none rounded-r-2xl h-full">
+                                <i class="fa-regular fa-magnifying-glass text-sm font-semibold"></i>
+                                <span class="text-base font-bold pl-2">Search</span>
+                            </button>
+                        </div>   
+                    </div>
+                </div>                       
+            </div>
+            <div class="flex text-xs">
+                <div class="pr-2 grid items-center">
+                    <img src="/src/img/signIn.png">
+                </div>
+                <div class="grid items-center">Sign in<br>join for free</div>
+            </div>
+            <div class="grid items-center">
+                <i class="fa-regular fa-message text-xl"></i>
+            </div>
+            <div class="flex-col text-xs mt-3">
+                <div>
+                    <i class="fa-solid fa-dollar-sign text-lg"></i>
+                </div>
+                <div>
+                    Orders
+                </div>
+
+            </div>
+            <div class= "mt-3 text-xs">
+                <div>   
+                    <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </div>
+                <div>Cart</div>
+            </div>
+        </div>
+    </div>
+    <!-- drop down -->
+    <div class="bg-white w-full h-10">
+        <div class="w-[1440px] h-10 text-[#222] mx-auto flex justify-between">
+            <!-- category dropdown -->
+            <div class="dropdown inline-block relative z-30">
+                <button class=" text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center hover:text-[#ff5900]">
+                    <span>Categories <i class='fas fa-angle-down'></i></span>
+                </button>
+                <ul class="dropdown-content absolute hidden text-gray-700 w-[400px] h-[700px] border-2 shadow-lg pt-1 hover:border-r-0 z-30 bg-white"> <!--w-[1000px] h-[700px] border-2 shadow-lg-->
+                    <li class="dropdown z-30">
+                    <a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap w-[400px] text-sm hover:border-b-2 hover:border-l-2 hover:border-r-0" href="#">Vehicle Parts & Accessories / Automotive accessories, Electornics & Tools / Vehicles & Transportation</a>
+                        <ul class="dropdown-content hidden text-gray-700 absolute left-[400px] h-[700px] top-0 w-[600px] border-y-2 border-r-2 shadow-lg z-30">
+                            <div class="flex text-xs">
+                                <div class="w-[300px] flex-col bg-white">
+                                    <div>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap text-semibold text-sm text-blue-500" href="#">Vehicle Parts & Accessories</a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Air Conditioning Systems</a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">ATV/UTV Parts & Accessories</a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Auto Body Systems</a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Auto Brake Systems</a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Auto Drive Systems</a>
+                                    </div>
+                                    <div>
+                                        <li><a class=" hover:text-[#ff5900] pt-16 pb-2 px-4 block whitespace-no-wrap text-semibold text-sm text-blue-500" href="#">Vehicles & Transportation
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">ATVs & UTVs
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Automotives
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Bus
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Containers
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#"> Emergency Vehicles </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#"> Golf Carts </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#"> View more</a>
+                                    </div>                                
+                                </div>
+                                <div class="w-[300px] bg-white">
+                                    <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap text-semibold text-sm text-blue-500" href="#">Vehicle Accessories, Electronics, & Tools</a>
+                                    <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Auto Electronics</a>
+                                    <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Automobile interconnected products</a>
+                                    <li><a class="hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Car cares and cleanings</a>
+                                    <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Exterior Accessories</a>
+                                    <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Interior Accessories</a>
+                                </div>
+                            </div>
+                            
+                        </ul>
+                    </li>
+                    <!-- 2 -->
+                    <li class="dropdown z-30">
+                        <a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap w-[400px] text-sm hover:border-y-2 hover:border-l-2 hover:border-r-0" href="#">VIndustrial Machinery / Construction & Building Machinery</a>
+                            <ul class="dropdown-content hidden text-gray-700 absolute left-[400px] h-[700px] top-0 w-[600px] border-y-2 border-r-2 shadow-lg bg-white">
+                                <div class="flex text-xs">
+                                    <div class="w-[300px] bg-white">
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap text-semibold text-sm text-blue-500" href="#">Industrial Machinery
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Agricultural Machinery & Equipment
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Apparel & Textile Machinery
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Chemical Machinery
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Cleaning Equipment
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Electrical Equipment Manufacturing Machinery
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Electronic Products Machinery
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">View more
+                                            </a>
+                                    </div>
+                                    <div class="w-[300px] bg-white">
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap text-semibold text-sm text-blue-500" href="#">
+                                            Construction & Building Machinery
+                                        </a>
+                                        <li><a class="hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Building Material Machinery
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#"> Energy & Mineral Equipment </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#"> Engineering & Construction Machinery</a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#"> Used Machinery</a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">View more</a>
+                                    </div>
+                                </div>
+                                
+                            </ul>
+                    </li>
+                    <!-- 3 -->
+                    <li class="dropdown z-30 bg-white">
+                        <a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap w-[400px] text-sm hover:border-y-2 hover:border-l-2 hover:border-r-0" href="#">Consumer Electronics / Home Appliances</a>
+                            <ul class="dropdown-content hidden text-gray-700 absolute left-[400px] h-[700px] top-0 w-[600px] border-y-2 border-r-2 shadow-lg bg-white">
+                                <div class="flex text-xs">
+                                    <div class="w-[300px] bg-white">
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap text-semibold text-sm text-blue-500" href="#">
+                                            Consumer Electronics</a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Blockchain Miners
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Cables & Commonly Used Accessories
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Camera, Photo & Accessories
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Chargers, Batteries & Power Supplies
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Computer Hardware & Software </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Earphone & Headphone & Accessories
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">View more
+                                            </a>
+                                    </div>
+                                    <div class="w-[300px] bg-white">
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap text-semibold text-sm text-blue-500" href="#">
+                                            Home Appliances
+                                        </a>
+                                        <li><a class="hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">Air Quality Appliances
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#"> Cleaning Appliances
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">   Heating & Cooling Appliances
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">  Home Appliance Parts
+                                                </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#"> Home Appliance Stock
+                                        </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#"> Laundry Appliances
+                                            </a>
+                                        <li><a class=" hover:text-[#ff5900] py-2 px-4 block whitespace-no-wrap" href="#">View more</a>
+                                    </div>
+                                </div>
+                                
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_dropDown text-sm text-[#333] flex gap-5 pt-2">
+                <div class="flex"> 
+                    <div><i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="pl-2 hover:text-[#ff5900] cursor-pointer">Get the App</div>
+                </div>  
+                <div class="dropdown inline-block relative">
+                    <button class="hover:text-[#ff5900] cursor-pointer flex">English-MMK <div><i class='fas fa-angle-down'></i></div></button> 
+                    <ul class="dropdown-content absolute left-[-280px] hidden text-gray-700 pt-1 w-[380px] h-[340px] bg-white border-[1px] border-solid border-[#f7f8fa] shadow-sm rounded-t-lg rounded-b-lg rounded-l-lg rounded-r-none p-5 z-50">
+                        <li class="font-semibold text-sm mb-4 mt-5">Region Setting</li>
+                        <li class="text-gray-400 text-sm mb-2">Language</li>
+                        <form action="#" class="flex-col text-gray-700 w-full mb-4">
+                            <select id="language" name="language" class="w-full px-4 text-sm leading-7 py-0">
+                                <option value="eng">English</option>
+                                <option value="myan">Myanmar</option>
+                                <option value="thai">Thailand</option>
+                                <option value="malay">Malaysia</option>
+                            </select>
+                        </form>
+                        <li class="text-gray-400 text-sm mb-2">Currency</li>
+                        <form action="#" class="flex-col text-gray-700 w-full">
+                            <select id="currency" name="currency" class="w-full px-4 text-sm leading-7 py-0">
+                                <option value="mmk">MMK</option>
+                                <option value="usd">US Dollar</option>
+                                <option value="euro">Euro</option>
+                                <option value="cad">Canadian Dollar</option>
+                            </select>
+                        </form>
+                        <li class="text-gray-700 text-sm mb-2 mt-4">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            The price for this currency is subject to change with foreign exchange rate. For reference only.
+                        </li>
+                        <li class="mt-7 absolute bottom-4 right-4">
+                            <button class="bg-[#ff5900] w-24 h-10 text-white font-semibold text-base">
+                                Save
+                            </button>
+                        </li>
+                    </ul>
+                </div>                   
+                <div class="dropdown inline-block relative pr-2">
+                    <button class="hover:text-[#ff5900] cursor-pointer flex">Ship to: <div class="pl-2"><img src="/src/img/myanmar.png" class="w-7 h-auto"></div></button> 
+                    <ul class="dropdown-content absolute left-[-280px] hidden text-gray-700 pt-1 w-[380px] h-[400px] bg-white border-[1px] border-solid border-[#f7f8fa] shadow-sm rounded-t-lg rounded-b-lg rounded-l-lg rounded-r-none p-5 z-50">
+                        <li class="font-semibold text-sm mb-4 mt-5">Choose your location</li>
+                        <li class="text-gray-700 text-sm mb-2 mt-4">
+                            Delivery options and fees may vary based on your locations
+                        </li>
+                        <li class="mt-7">
+                            <button class="bg-[#ff5900] w-full h-8 text-white text-base">
+                                Sign in to see your address
+                            </button>
+                        </li>
+                        <li class="text-gray-300 mt-7 relative"> <div class="border-t-[1px] border-solid border-[#EEE]"></div><div class="absolute -top-2 left-40 bg-white px-2">OR</div></li>
+                        <li class="text-gray-400 text-sm mb-2 mt-7">
+                        <form action="#" class="flex-col text-gray-700 w-full mb-4 border-[1px]">
+                            <select id="country" name="country" class="w-full px-4 text-sm leading-7 py-0">
+                                <option value="myan" class="flex">Myanmar</option>
+                                <option value="eng">United State of Ameria</option>
+                                <option value="thai">Thailand</option>
+                                <option value="malay">Malaysia</option>
+                            </select>
+                        </form>
+                        </li>
+                        <li class="text-sm mb-2 border-[1px]">
+                        <input class="w-full py-1 px-1" placeholder="Enter city or zip">
+                        </li>
+                        <li class="mt-7">
+                            <button class="bg-[#ff5900] w-24 h-10 text-white font-semibold text-base">
+                                Save
+                            </button>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- Image banner -->
+    <div class="bg-[url('/src/img/apparel/img_banner.avif')] bg-center h-[240px] w-full relative z-0">
+        <div class="w-full bg-[rgba(0,0,0,0.3)] z-10 h-[240px] absolute top-0">
+            <div class="absolute left-[750px] top-10 text-center text-white h-[55px] z-20 ">
+                <div class="text-5xl leading-normal font-bold">
+                    Apparel & Accessories
+                </div>
+                <div class="text-sm font-medium leading-5">
+                    Discover new and trending products
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- Industry Nav -->
+    <div class="w-[1200px] h-[185px] bg-white mx-auto mb-[-77px] relative top-[-77px] rounded-lg overflow-hidden shadow-lg z-10 text-[#333]">
+        <div class="py-5 px-5 mb-2">
+            <div class="font-semibold text-xl">Source by category</div>
+                <!--Clothes List Start -->
+                <div class="clothes_series absolute top-12 w-full h-60 overflow-hidden">
+                    <!-- <div class="w-full"> overflow-x-scroll -->
+                        <div class="clothes_list absolute flex pl-10">
+                            <a href="#" class="clothes_item py-4 px-1" onmouseover="clothes_dropdown(0)">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/women_clothing.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Women's Clothing</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1" onmouseover="clothes_dropdown(1)">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/hat.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Hats & Caps</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1" onmouseover="clothes_dropdown(2)">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/sportSwear.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Sportswear</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/belts.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Belts & Accessories</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/wedding_accessoires.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-1">Wedding Apparel & Accessories</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/gloves.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Gloves & Mittens</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/scarves.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Scarves & Shawls</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/ties.png" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Ties & Accessories</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/clothes_accessories.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Clothes Accessories</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/socks.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Socks & Hosiery</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/glove_set.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Scarf, Hat & Glove Sets</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/knee_sleeves.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Sleeves & Knee Sleeves</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/other apparel.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Other Apparel</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/other_fashion.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Other fashion accessories</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/eye_masks.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Ear Muffs & Eye masks</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/underwear.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Underwear</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/ties.png" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Ethnic Clothing</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/ethnic_accessories.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Ethnic Accessories</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/garmet.webp" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Garment & Processing</div>
+                                </div>
+                            </a>
+                            <a href="#" class="clothes_item py-4 px-1">
+                                <div class="flex flex-col justify-center items-center w-[130px] mx-[10px] my-2">
+                                    <div class="bg-[#000] rounded-full h-[60px] w-[60px] flex items-center justify-center overflow-hidden relative border-0">
+                                        <img src="/src/img/apparel/ties.png" class="w-[60px] h-[60px]">
+                                        <div class="bg-[rgba(0,0,0,0.04)] w-full h-full box-content absolute top-0 left-0 border-0"></div>
+                                    </div>
+                                    <div class="text-[#222] text-sm leading-6 text-center mt-3">Ties & Accessories</div>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    <div class="previous absolute top-0 left-0 items-center h-[120px] w-[60px] bg-white z-20 hidden" onclick="move(-1)">
+                        <div class="w-[72px]">
+                            <img src="/src/img/previous.avif" class="absolute bottom-7 cursor-pointer h-16 w-16">
+                        </div>
+                    </div>
+                    <div class="next flex absolute top-0 right-4 items-center h-[120px] bg-white" onclick="move(1)">
+                        <div class="w-[72px]">
+                            <img src="/src/img/previous.avif" class="absolute bottom-7 cursor-pointer h-16 w-16 rotate-180">
+                        </div>
+                    </div>
+                </div>
+                <!-- Clothes List End -->
+
+        </div>     
+    </div>
+    <!-- Clothes Content Start -->  
+    <div class="clothes_content hidden w-[1200px] h-auto bg-white mx-auto relative top-1 z-10 text-gray-700 text-sm">
+        <ul class="absolute text-gray-700 pt-1 pl-5 bg-white w-[900px] h-[400px] flex justify-between rounded-lg">
+            <div>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Blouses & Shirts</a></li>
+                <li><a class="hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Skirts</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Jackets</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Vests & Waistcoats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Sweaters</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Suits & Blazers</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Tank Tops</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Pants & Trousers</a></li>
+            </div>
+            <div>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Sleepwear </a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Shorts</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Hoodies & Sweatshirts</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Coats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Leggings</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Jumpsuits & Playsuits</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Polo Shirts</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Sets  </a></li>
+            </div>
+            <div>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Women's Down Coats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's T-Shirts</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Denim Dresses</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Denim Jackets & Coats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Denim Sets</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Women's Denim Overalls & Jumpsuits</a></li>
+            </div>
+            <div></div>          
+        </ul>
+    </div>
+    <div class="clothes_content hidden w-[1200px] h-auto bg-white mx-auto relative top-1 z-10 text-gray-700 text-sm">
+        <ul class="absolute text-gray-700 pt-1 pl-5 bg-white w-[900px] h-[400px] flex justify-between rounded-lg">
+            <div>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Other Hats & Caps</a></li>
+                <li><a class="hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Ivy Hats </a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Fedora Hats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Formal Hats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Straw Hats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Cycling & Mountaineering Caps</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Festive Hats & Party Caps</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Bonnets</a></li>
+            </div>
+            <div>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Clothing Masks </a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Berets</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Bucket Hats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Camouflage Caps</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Cowboy Hats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Party Hats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Visors</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Beanies</a></li>
+            </div>
+            <div>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Aviator hats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">  Balaclavas</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">  Baseball Caps</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">   Dad Hats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Trucker Hats</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Snapback Caps</a></li>
+                <li><a class="rounded-t hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#"> Camp Caps</a></li>
+            </div>
+            <div></div>          
+        </ul>
+    </div>
+    <!-- Populer Products -->
+    <div class="w-[1200px] h-[300px] bg-white mx-auto relative top-4 rounded-lg overflow-hidden shadow-lg text-[#333]">
+        <div class="py-5 px-5 mb-2">
+            <div class="font-semibold text-xl">Popular products in your industry</div>
+            <div class="product_list flex gap-[19px]">
+                <a href="winter_coat.html" class="pt-3 w-[177px]">
+                    <div class="w-[177px] h-[177px] rounded-lg relative overflow-hidden">
+                        <img src="/src/img/apparel/boots_wear.webp" class="w-[177px] h-[177px]">
+                        <div class="bg-[rgba(0,0,0,0.04)] h-full w-full z-10 absolute top-0 left-0"></div>
+                    </div>
+                    <div class="text-base font-semibold text-[#000] w-[110px] mx-auto text-center pt-1 leading-3">Women Boots Wear</div>
+                </a>
+                <a href="winter_coat.html" class="pt-3 w-[177px]">
+                    <div class="w-[177px] h-[177px] rounded-lg relative overflow-hidden">
+                        <img src="/src/img/apparel/plus_size.webp" class="w-[177px] h-[177px]">
+                        <div class="bg-[rgba(0,0,0,0.04)] h-full w-full z-10 absolute top-0 left-0"></div>
+                    </div>
+                    <div class="text-base font-semibold text-[#000] w-[170px] mx-auto text-center pt-1 leading-3">Women's Plus Size Fashion</div>
+                </a>
+                <a href="winter_coat.html" class="pt-3 w-[177px]">
+                    <div class="w-[177px] h-[177px] rounded-lg relative overflow-hidden">
+                        <img src="/src/img/apparel/outdoor_look.webp" class="w-[177px] h-[177px]">
+                        <div class="bg-[rgba(0,0,0,0.04)] h-full w-full z-10 absolute top-0 left-0"></div>
+                    </div>
+                    <div class="text-base font-semibold text-[#000] w-[110px] mx-auto text-center pt-1 leading-3">Outdoor Look</div>
+                </a>
+                <a href="winter_coat.html" class="pt-3 w-[177px]">
+                    <div class="w-[177px] h-[177px] rounded-lg relative overflow-hidden">
+                        <img src="/src/img/apparel/packaging_women.webp" class="w-[177px] h-[177px]">
+                        <div class="bg-[rgba(0,0,0,0.04)] h-full w-full z-10 absolute top-0 left-0"></div>
+                    </div>
+                    <div class="text-base font-semibold text-[#000] w-[170px] mx-auto text-center pt-1 leading-3">Packaging for Women's Clothing</div>
+                </a>
+                <a href="winter_coat.html" class="pt-3 w-[177px]">
+                    <div class="w-[177px] h-[177px] rounded-lg relative overflow-hidden">
+                        <img src="/src/img/apparel/street_fashion.webp" class="w-[177px] h-[177px]">
+                        <div class="bg-[rgba(0,0,0,0.04)] h-full w-full z-10 absolute top-0 left-0"></div>
+                    </div>
+                    <div class="text-base font-semibold text-[#000] w-[110px] mx-auto text-center pt-1 leading-3">Street Fashion</div>
+                </a>
+                <a href="winter_coat.html" class="pt-3 w-[177px]">
+                    <div class="w-[177px] h-[177px] rounded-lg relative overflow-hidden">
+                        <img src="/src/img/apparel/fashion_retailer.webp" class="w-[177px] h-[177px]">
+                        <div class="bg-[rgba(0,0,0,0.04)] h-full w-full z-10 absolute top-0 left-0"></div>
+                    </div>
+                    <div class="text-base font-semibold text-[#000] w-[170px] mx-auto text-center pt-1 leading-3">Fashion Goods for Retailer</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Style Floor -->
+    <div class="w-[1200px] h-[320px] mx-auto mt-10">
+        <div class="py-5 mb-2">
+            <div class="font-semibold text-xl">Source by style</div>
+        </div>
+        <div class="flex justify-between">
+            <a href="winter_coat.html" class="bg-white w-[190px] h-[250px] rounded-lg">
+                <div class="w-[170px] h-[180px] rounded-lg overflow-hidden relative top-4 mx-auto mb-7">
+                    <img src="/src/img/apparel/minimal_list.webp" class="w-[167px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-center font-semibold">Minimalist</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[190px] h-[250px] rounded-lg">
+                <div class="w-[170px] h-[180px] rounded-lg overflow-hidden relative top-4 mx-auto mb-7">
+                    <img src="/src/img/apparel/cute.webp" class="w-[167px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-center font-semibold">Cute</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[190px] h-[250px] rounded-lg">
+                <div class="w-[170px] h-[180px] rounded-lg overflow-hidden relative top-4 mx-auto mb-7">
+                    <img src="/src/img/apparel/men's_shirt.webp" class="w-[167px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-center font-semibold">Men's Shirts</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[190px] h-[250px] rounded-lg">
+                <div class="w-[170px] h-[180px] rounded-lg overflow-hidden relative top-4 mx-auto mb-7">
+                    <img src="/src/img/apparel/sexy.webp" class="w-[167px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-center font-semibold">Sexy</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[190px] h-[250px] rounded-lg">
+                <div class="w-[170px] h-[180px] rounded-lg overflow-hidden relative top-4 mx-auto mb-7">
+                    <img src="/src/img/apparel/urban_wear.webp" class="w-[167px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-center font-semibold">Urban Wear</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[190px] h-[250px] rounded-lg">
+                <div class="w-[170px] h-[180px] rounded-lg overflow-hidden relative top-4 mx-auto mb-7">
+                    <img src="/src/img/apparel/business_wear.webp" class="w-[167px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-center font-semibold">Business Casual</div>
+            </a>
+        </div>
+    </div>
+    <!-- Verified Suppliers Floor -->
+    <div class="w-[1200px] h-[320px] mx-auto mt-10 relative overflow-hidden">
+        <div class="py-5 mb-2">
+            <div class="font-semibold text-xl">Verified Pro Supplier</div>
+        </div>
+        <div class="verified_list flex gap-3 absolute">
+            <a href="winter_coat.html" class="bg-white w-[392px] h-[220px] rounded-lg">
+                <div class="w-[392px] h-[220px] rounded-lg overflow-hidden relative top-0 mx-auto">
+                    <img src="/src/img/apparel/verified01.avif" class="w-[392px] h-auto">
+                    <!-- <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div> -->
+                    <div class="absolute top-16 left-3 font-semibold text-white text-sm w-[320px]">Sportswear manufacturer for UEFA Champions League</div>
+                    <div class="absolute bottom-5 left-3 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_01_small01.webp" class="w-20 h-20">
+                    </div>
+                    <div class="absolute bottom-5 left-24 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_01_small02.webp" class="w-20 h-20">
+                    </div>
+                </div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[392px] h-[220px] rounded-lg">
+                <div class="w-[392px] h-[220px] rounded-lg overflow-hidden relative top-0 mx-auto">
+                    <img src="/src/img/apparel/verified02.avif" class="w-[392px] h-auto">
+                    <!-- <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div> -->
+                    <div class="absolute top-16 left-3 font-semibold text-white text-sm w-[320px]">Men's streetwear supplier with 100+ clients</div>
+                    <div class="absolute bottom-5 left-3 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_02_small01.webp" class="w-20 h-20">
+                    </div>
+                    <div class="absolute bottom-5 left-24 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_02_small02.webp" class="w-20 h-20">
+                    </div>
+                </div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[392px] h-[220px] rounded-lg">
+                <div class="w-[392px] h-[220px] rounded-lg overflow-hidden relative top-0 mx-auto">
+                    <img src="/src/img/apparel/verified03.avif" class="w-[392px] h-auto">
+                    <!-- <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div> -->
+                    <div class="absolute top-16 left-3 font-semibold text-white text-sm w-[320px]">All-in-one custom hat manufacturer</div>
+                    <div class="absolute bottom-5 left-3 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_03_small01.webp" class="w-20 h-20">
+                    </div>
+                    <div class="absolute bottom-5 left-24 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_03_small02.webp" class="w-20 h-20">
+                    </div>
+                </div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[392px] h-[220px] rounded-lg">
+                <div class="w-[392px] h-[220px] rounded-lg overflow-hidden relative top-0 mx-auto">
+                    <img src="/src/img/apparel/verified04.avif" class="w-[392px] h-auto">
+                    <!-- <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div> -->
+                    <div class="absolute top-16 left-3 font-semibold text-white text-sm w-[320px]">Islamic clothing manufacturer for 20+ years</div>
+                    <div class="absolute bottom-5 left-3 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_04_small01.webp" class="w-20 h-20">
+                    </div>
+                    <div class="absolute bottom-5 left-24 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_04_small02.webp" class="w-20 h-20">
+                    </div>
+                </div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[392px] h-[220px] rounded-lg">
+                <div class="w-[392px] h-[220px] rounded-lg overflow-hidden relative top-0 mx-auto">
+                    <img src="/src/img/apparel/verified05.avif" class="w-[392px] h-auto">
+                    <!-- <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div> -->
+                    <div class="absolute top-16 left-3 font-semibold text-white text-sm w-[320px]">High-end yoga apparel maker for 13 years</div>
+                    <div class="absolute bottom-5 left-3 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_05_small01.webp" class="w-20 h-20">
+                    </div>
+                    <div class="absolute bottom-5 left-24 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_05_small02.webp" class="w-20 h-20">
+                    </div>
+                </div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[392px] h-[220px] rounded-lg">
+                <div class="w-[392px] h-[220px] rounded-lg overflow-hidden relative top-0 mx-auto">
+                    <img src="/src/img/apparel/verified05.avif" class="w-[392px] h-auto">
+                    <!-- <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div> -->
+                    <div class="absolute top-16 left-3 font-semibold text-white text-sm w-[320px]">Custom apparel manufacturer of 13 years</div>
+                    <div class="absolute bottom-5 left-3 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_05_small01.webp" class="w-20 h-20">
+                    </div>
+                    <div class="absolute bottom-5 left-24 w-20 h-20 rounded-lg overflow-hidden">
+                        <img src="/src/img/apparel/verified_05_small02.webp" class="w-20 h-20">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="verified_pre absolute top-7 left-0 items-center h-[220px] w-12 z-20 hidden" onclick="verified_move(-1)">
+            <div class="w-12">
+                <img src="/src/img/previous.avif" class="absolute bottom-7 cursor-pointer h-12 w-12 hover:bg-[#bbb]">
+            </div>
+        </div>
+        <div class="verified_nxt flex absolute top-7 right-0 items-center h-[220px] w-12 z-20" onclick="verified_move(1)">
+            <div class="w-12">
+                <img src="/src/img/previous.avif" class="absolute bottom-7 cursor-pointer h-12 w-12 rotate-180 hover:bg-[#bbb]">
+            </div>
+        </div>
+    </div>
+    <!-- Back to Top Button -->
+    <div>
+        <div class="backTop fixed w-14 bottom-12 cursor-pointer h-14 left-1/2 ml-[632px] opacity-80 z-50 hidden bg-white" onclick="backTop()">
+            <div><img src="/src/img/apparel/toUpHome.svg" class="h-10 w-10 -rotate-90 mt-2 ml-2"></div>            
+        </div>
+    </div>
+    <!-- Image auto slideshow -->
+    <div class="w-full h-[320px]">
+        <div class="py-5 mb-2 w-[1200px] mx-auto cursor-pointer">
+            <div class="font-semibold text-xl">Just for you</div>
+        </div>
+        <div class="w-[1200px] h-[200px] mx-auto relative">
+            <div class="mySlides fade absolute hidden">
+                <img src="/src/img/apparel/just4u_01.avif" class="w-[1200px] h-[200px]">
+            </div>   
+            <div class="mySlides fade absolute hidden">
+                <img src="/src/img/apparel/just4u_02.avif" class="w-[1200px] h-[200px]">
+            </div>
+            <div class="mySlides fade absolute hidden">
+                <img src="/src/img/apparel/just4u_03.avif" class="w-[1200px] h-[200px]">
+            </div>
+            <div class="mySlides fade absolute hidden">
+                <img src="/src/img/apparel/just4u_04.avif" class="w-[1200px] h-[200px]">
+            </div>
+            <div class="text-center absolute bottom-2 left-1/2 z-30 flex">
+                <span class="dot h-3 w-3 mx-1 bg-white rounded-full hover:bg-[#717171]"></span> 
+                <span class="dot h-3 w-3 mx-1 bg-white rounded-full hover:bg-[#717171]"></span> 
+                <span class="dot h-3 w-3 mx-1 bg-white rounded-full hover:bg-[#717171]"></span> 
+                <span class="dot h-3 w-3 mx-1 bg-white rounded-full hover:bg-[#717171]"></span> 
+            </div>
+        </div>
+
+    </div>
+    <!-- Clothes Gallery Floor -->
+    <div class="w-[1200px] h-[1600px] mx-auto mt-10 relative overflow-hidden">
+        <!-- 1 Gallery Row -->
+        <div class="flex justify-between mb-5">
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/winter_coat.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">New winter coats wholesale thick and loose temperament...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 58,764</div>
+                <div class="text-sm px-2 text-gray-700">Min. order:1 piece</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/baby_clothes.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">Hot selling products cute infant newborn baby clothes winter...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 13,999</div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:4 sets</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/winter_men.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">New Fashion Men Autumn Winter hoodies Street Long... </div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 4,828</div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:2 pieces</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/lady_jacket.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">High Quality Ladies Parka Jackets Winter Coats Mid-length</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 28,333</div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:10 pieces</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/child_clothes.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">High quality cheap price winter kids girl children clothes with...
+                    </div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 13,999
+                    </div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:4 sets</div>
+            </a>
+        </div>
+        <!-- 2 Gallery Row -->
+        <div class="flex justify-between mb-5">
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/private_label_sale.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">Dear-Lover Custom Logo OEM ODM Private Label Wholesale...</div>
+                <div class="text-base font-semibold px-2 text-red-600">MMK 5,220  <del class=" text-gray-700 font-normal pl-1">MMK 5,806</del></div>
+                <div class="text-sm px-2 text-gray-700">Min. order:2 pieces</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/long_sleeve.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">Hot Sale Long Sleeve Jumpsuits Women Sports Wear One Pie...</div>
+                <div class="text-base font-semibold px-2 text-red-600">MMK 11,864 <del class=" text-gray-700 font-normal pl-1">MMK 18,843</del></div>
+                <div class="text-sm px-2 text-gray-700">Min. order:1 set</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/classic_men.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">classic wool cashmere men's sweaters cashmere men...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 58,688</div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:2 pieces</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/women_nightglow.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">Custom white reflective logo t shirt for women night glowin...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 22,134</div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:50 pieces</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/hongkong_style.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">Autumn New Plaid Hong Kong Style Literary Couple Shirt Me...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 20,311
+                    </div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:2 pieces</div>
+            </a>
+        </div>
+        <!-- 3 Gallery Row -->
+        <div class="flex justify-between mb-5">
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/jump_suit.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">New spring fall jumpsuit womens clothing casual solid...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 21,966</div>
+                <div class="text-sm px-2 text-gray-700">Min. order:1 piece</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/winter_sleeves.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">2023 Puffer Vest Woman Winter Sleeveless Windbreak...</div>
+                <div class="text-base font-semibold px-2 text-red-600">MMK 19,200  <del class=" text-gray-700 font-normal pl-1">MMK 21,338</del></div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:1 piece</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/plussize_new.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">Winter plus size women clothing New simple pure col...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 11,528</div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:1 pieces</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/long_custom_men.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">OEM Wholesale Fashion Long Custom Logo Pattern Winter...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 62,880</div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:100 pieces</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/causal_men.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">Men blazer suit Printed Slim Stand Collar Casual mens suit...</div>
+                    <div class="text-base font-semibold px-2 text-red-600">MMK 23,056 <del class=" text-gray-700 font-normal pl-1"> MMK 26,200</del></div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:1 piece</div>
+            </a>
+        </div>
+         <!-- 4 Gallery Row -->
+         <div class="flex justify-between mb-5">
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/custom_clothing.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">Custom Clothing Manufacturers Tactical Comb...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 54,811</div>
+                <div class="text-sm px-2 text-gray-700">Min. order:1 piece</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/boys_set.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">Boys Clothing Sets Fall Cotton Tshirt with Dinosaur+Hooded...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 14,505</div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:3 sets</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/traditional_wear.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">Anime Slayer: Kimetsu No Yaiba Zenitsu Giyu Tanjirou...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 21,966</div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:1 piece</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/fur_coat.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">2020 New Arrival Factory Wholesale Faux Fur Coat...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 41,920</div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:2.0 pieces</div>
+            </a>
+            <a href="winter_coat.html" class="bg-white w-[230px] h-[370px] rounded-lg shadow-sm">
+                <div class="w-[230px] h-[230px] rounded-t-lg rounded-b-none overflow-hidden mx-auto mb-3 relative">
+                    <img src="/src/img/apparel/cosplay_costume.webp" class="w-[230px] h-auto">
+                    <div class="bg-[rgba(0,0,0,0.04)] absolute top-0 left-0 h-full w-full z-10" ></div>
+                </div>
+                <div class="text-sm py-3 px-2 text-gray-700">New arrival Harry Cosplay Costume Potter Robe For...</div>
+                <div class="text-base font-semibold px-2 text-gray-700">MMK 27,039</div>
+                <div class="text-sm px-2 text-gray-700"> Min. order:1 set</div>
+            </a>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <div class="bg-white w-full border-t-[1px] border-solid border-[#ddd] text-[#222] text-sm leading-[18px]">
+        <div class="w-full text-[#666] flex flex-col gap-3 py-5 px-8 text-center">
+            <div>
+                <a href="#" target="_blank" class="pr-2">AliExpress</a>
+                <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">1688.com</a>
+                <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Tmall Taobao World</a>
+                <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Alipay</a>
+                <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Lazada</a>
+                <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Taobao Global</a>
+            </div>
+            <div>
+                <a href="#" target="_blank" class="pr-2">Policies and rules</a>
+                <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Legal notices</a>
+                <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Product Listing Policies</a>
+                <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Intellectural Property Protection</a>
+                <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Privacy Policy</a>
+                <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Terms of Use</a>
+                <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Integrity Compliance</a>
+            </div>
+            <div class="flex gap-3 justify-center">
+                <span>© 1999-2023 Alibaba.com. All rights reserved.
+                </span>
+                <a href="#" target="_blank" class="pl-2 flex gap-3">
+                    <img src="/src/img/chinese_logo.gif" class="w-5 h-5">
+                    浙公网安备 33010002000092号
+                </a>           
+                <a href="#" target="_blank" class="pl-2 flex gap-3">
+                    <img src="/src/img/chinese_logo01.avif" class="w-5 h-5"> 浙B2-20120091-4</a>
+            </div>
+    
+        </div>
+    </div>
+
+</body>
+</html>

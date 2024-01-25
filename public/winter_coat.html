@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Coat</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" /> -->
+</head>
+<body>
+    <!-- Header Bar -->
+    <div class="tnh-origin w-full h-14 fixed top-0"> 
+        <div class="newHeader bg-[#fff] text-[#222] content-center h-14"> 
+            <div class="header-content flex justify-between content-center h-16">
+                <div class="p-5">
+                    <div class="logo-scroll">
+                    </div>
+                </div>  
+                <div class="p-3" id="product_search_box">
+                    <div class="border-[1px] border-[#222] border-solid h-10 w-[700px] rounded-2xl">
+                        <div class="inline-block relative h-full w-full">
+                            <button class="font-semibold py-2 px-4 rounded inline-flex items-center" onclick="changeProduct()" id="product">
+                                <span>Products 
+                                    <i style='font-size:14px' class='fas'>&#xf107;</i> 
+                                    <!-- <i style='font-size:24px' class='fas'>&#xf106;</i> -->
+                                    <!-- <i class='fas fa-angle-down' id="productIcon"></i> -->
+                                    <!-- <i class='fas fa-angle-down'></i> -->
+                                </span>
+                                <span class="pl-2">
+                                    |
+                                </span>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 z-50" id="productContent">
+                                <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Products</a></li>
+                                <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Manufacturers</a></li>
+                                <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Suppliers</a></li>
+                            </ul>
+                            <div class="camera absolute bottom-1 left-36">
+                                <input type="text" class="h-8 w-[380px] bg-transparent border-0" placeholder="fur jacket women">
+                            </div>
+                            <div class="camera absolute bottom-1 right-36 hover:cursor-pointer">
+                                <i class="fa-solid fa-camera text-black text-xl"></i>
+                            </div>
+                            <div class="absolute right-1 bottom-1 hover:cursor-pointer">
+                                <button class="px-5 py-1 bg-[#f60] rounded-full">
+                                    <i class="fa-regular fa-magnifying-glass text-sm font-semibold"></i>
+                                    <span class="text-base font-bold pl-2">Search</span>
+                                </button>
+                            </div>   
+                        </div>
+                    </div>                       
+                </div>
+   
+                <div class="accessTool flex items-center">
+                    <div class="flex accTool">                        
+                        <div class="dropdown inline-block relative pr-2">
+                            <button class="hover:text-[#ff5900] cursor-pointer flex">Ship to: <div class="pl-2"><img src="/src/img/myanmar.png" class="w-7 h-auto"></div> <span>MM</span></button> 
+                            <ul class="dropdown-content absolute left-[-280px] hidden text-gray-700 pt-1 w-[380px] h-[400px] bg-white border-[1px] border-solid border-[#f7f8fa] shadow-sm rounded-t-lg rounded-b-lg rounded-l-lg rounded-r-none p-5 z-50">
+                                <li class="font-semibold text-sm mb-4 mt-5">Choose your location</li>
+                                <li class="text-gray-700 text-sm mb-2 mt-4">
+                                    Delivery options and fees may vary based on your locations
+                                </li>
+                                <li class="mt-7">
+                                    <button class="bg-[#ff5900] rounded-2xl w-full h-8 text-white text-base">
+                                        Sign in to see your address
+                                    </button>
+                                </li>
+                                <li class="text-gray-300 mt-7 relative"> <div class="border-t-[1px] border-solid border-[#EEE]"></div><div class="absolute -top-2 left-40 bg-white px-2">OR</div></li>
+                                <li class="text-gray-400 text-sm mb-2 mt-7">
+                                <form action="#" class="flex-col text-gray-700 w-full mb-4 ">
+                                    <select id="country" name="country" class="w-full px-4 text-sm leading-7 py-1 rounded-xl border-[1px]">
+                                        <option value="myan" class="flex">Myanmar</option>
+                                        <option value="eng">United State of Ameria</option>
+                                        <option value="thai">Thailand</option>
+                                        <option value="malay">Malaysia</option>
+                                    </select>
+                                </form>
+                                </li>
+                                <li class="text-sm mb-2">
+                                <input class="w-full py-1 px-1 rounded-xl border-[1px]" placeholder="Enter city or zip">
+                                </li>
+                                <li class="mt-7">
+                                    <button class="bg-[#ff5900] w-24 h-10 text-white font-semibold text-base rounded-2xl">
+                                        Save
+                                    </button>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div> 
+                    <div class="flex accTool">
+                        <i class="fa-solid fa-globe globe"></i>
+                        <span>English USD</span>
+                    </div>
+                    <div class="flex accTool">
+                        <div>
+                        <img src="/src/img/signIn.png" alt="" class="src">
+                        </div>
+                        <span>Sign in</span>
+                    </div>
+                    <div class="accTool">
+                        <button class="py-2 px-6 bg-[#f60] rounded-full">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+     <!-- Sub Header -->
+     <div class="subHeader w-full h-auto bg-white text-[#222] border-b-[1px] border-solid border-[#ddd] mt-16"> <!--z-50-->
+        <div class="text-sm w-[1580px] h-10 mx-auto">
+        <div class="navBar flex justify-between text-sm mx-auto">
+            <div class="flex right-header">
+                <!-- Start -->
+                <div id="category_title" onmouseover="category_show()" onmouseout="category_hide()" class="inline-block h-[541px]">
+                    <button class="category-title font-semibold px-4 rounded inline-flex items-center">
+                        <span >All Categories</span>
+                    </button>
+                    <div id="category_tab_content" class="animated_tab_content h-[541px] bg-white border-t-1 border-solid border-[#ddd] absolute left-0 top-24 w-full overflow-hidden hidden cursor-pointer z-10">
+                        <div class="flex flex-col gap-2 justify-start pl-[220px] my-2 relative">
+                            <!-- 1 -->
+                            <div id="drop_title" onmouseover="drop_title_show(0)" onmouseout="drop_title_hide(this)" class="flex drop_title">
+                                <div class="w-[340px] h-5 py-2">
+                                    <a class="hover:bg-gray-50 py-2 block whitespace-no-wrap hover:font-bold" href="#">My Categories</a>
+                                </div>                                            
+                                    <div id="drop_content" class="drop_content text-gray-700 bg-gray-50">
+                                        <!-- 1-1 -->
+                                        <div id="sec_drop_title" onmouseover="sec_drop_title_show(0)" onmouseout="sec_drop_title_hide(this)" class="flex sec_drop_title" >
+                                            <div class="w-[316px] h-5 absolute inline-block">
+                                                <a class="hover:bg-gray-100 py-2 block whitespace-no-wrap hover:font-bold" href="#">Commercial Service Equipment
+                                                </a>
+                                            </div>                                                        
+                                                <div id="sec_drop_content" class="sec_drop_content text-gray-700 w-[900px] absolute right-0">
+                                                    <div class="font-bold">Commercial Service Equipments > </div>
+                                                    <div class="w-[800px] flex flex-wrap gap-10 pt-5 mx-auto">
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">    
+                                                            <div>
+                                                                <img src="/src/img/display_rack.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Display Racks</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/shelves.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Supermarket Shelves</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/digital_display.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Digital Signage and Displays</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/electronic_sign.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Electronic Signs</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/hotel&resturant.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Other Hotel & Restaurant</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/sound_equip.webp " class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Sound Equipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/photo_boot.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Photo Booth</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/vending_machine.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Vending Machines</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/refrige.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Refrigeration Eqipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                            <div>
+                                                                <img src="/src/img/advertizing_inflat.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Advertising Inflatable</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                            <div>
+                                                                <img src="/src/img/food_track.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Food Trucks</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/audio_equip.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Audio Sound Equipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/dj_installer.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">DJ Controller</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/serving_tray.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Serving Trays</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/other_advert.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Other advertising</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/light_boxes.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Light Boxes</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 underline" href="#">   
+                                                            More
+                                                        </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                        </div>
+                                        <!-- 1-2 -->
+                                        <div id="sec_drop_title" onmouseover="sec_drop_title_show(1)" onmouseout="sec_drop_title_hide(this)" class="flex sec_drop_title" >
+                                            <div class="w-[316px] h-5 absolute top-10 inline-block">
+                                                <a class="hover:bg-gray-100 py-2 block whitespace-no-wrapm hover:font-bold" href="#">Home & Garden
+                                                </a>
+                                            </div>                                                        
+                                            <div id="sec_drop_content" class="sec_drop_content text-gray-700 w-[900px] absolute right-0 hidden sec_drop_content">
+                                                <div class="font-bold">Home & Garden > </div>
+                                                <div class="w-[800px] flex flex-wrap gap-10 pt-5 mx-auto">
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">    
+                                                        <div>
+                                                            <img src="/src/img/display_rack.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Display Racks</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/shelves.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Supermarket Shelves</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/digital_display.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Digital Signage and Displays</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/electronic_sign.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Electronic Signs</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/hotel&resturant.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Other Hotel & Restaurant</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/sound_equip.webp " class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Sound Equipment</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/photo_boot.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Photo Booth</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/vending_machine.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Vending Machines</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/refrige.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Refrigeration Eqipment</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                        <div>
+                                                            <img src="/src/img/advertizing_inflat.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Advertising Inflatable</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                        <div>
+                                                            <img src="/src/img/food_track.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Food Trucks</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/audio_equip.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Audio Sound Equipment</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/dj_installer.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">DJ Controller</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/serving_tray.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Serving Trays</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/other_advert.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Other advertising</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/light_boxes.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Light Boxes</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 underline" href="#">   
+                                                        More
+                                                    </a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!-- 2 -->
+                            <div id="drop_title" onmouseover="drop_title_show(1)" onmouseout="drop_title_hide(this)" class="flex drop_title ">
+                                <div class="w-[340px] h-5 py-2 ">
+                                    <a class="hover:bg-gray-50 py-2 block whitespace-no-wrap hover:font-bold absolute top-12" href="#">Home Decor</a>
+                                </div>                                              
+                                    <div id="drop_content" class="drop_content hidden text-gray-700 bg-gray-50">
+                                        <div id="sec_drop_title" onmouseover="sec_drop_title_show(2)" onmouseout="sec_drop_title_hide(this)" class="flex" >
+                                            <div class="w-[316px] h-5 absolute top-0 inline-block">
+                                                <a class="hover:bg-gray-100 py-2 block whitespace-no-wrap hover:font-bold" href="#">Gift & Cards
+                                                </a>
+                                            </div>                                                        
+                                                <div id="sec_drop_content" class="sec_drop_content text-gray-700 w-[900px] bg-red-50 absolute right-0">
+                                                    <div class="font-bold">Gift & Cards > </div>
+                                                    <div class="w-[800px] flex flex-wrap gap-10 pt-5 mx-auto">
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">    
+                                                            <div>
+                                                                <img src="/src/img/display_rack.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Display Racks</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/shelves.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Supermarket Shelves</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/digital_display.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Digital Signage and Displays</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/electronic_sign.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Electronic Signs</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/hotel&resturant.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Other Hotel & Restaurant</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/sound_equip.webp " class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Sound Equipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/photo_boot.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Photo Booth</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/vending_machine.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Vending Machines</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/refrige.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Refrigeration Eqipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                            <div>
+                                                                <img src="/src/img/advertizing_inflat.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Advertising Inflatable</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                            <div>
+                                                                <img src="/src/img/food_track.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Food Trucks</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/audio_equip.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Audio Sound Equipment</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/dj_installer.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">DJ Controller</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/serving_tray.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Serving Trays</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/other_advert.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Other advertising</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                            <div>
+                                                                <img src="/src/img/light_boxes.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                            </div>                                 
+                                                            <div class="text-sm">Light Boxes</div>
+                                                        </a>
+                                                        <a class="flex-col justify-center w-28 underline" href="#">   
+                                                            More
+                                                        </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                        </div>
+                                        <div id="sec_drop_title" onmouseover="sec_drop_title_show(3)" onmouseout="sec_drop_title_hide(this)" class="flex sec_drop_title" >
+                                            <div class="w-[316px] h-5 absolute top-10 inline-block">
+                                                <a class="hover:bg-gray-100 py-2 block whitespace-no-wrapm hover:font-bold" href="#">Construction & Real Estate
+                                                </a>
+                                            </div>                                                        
+                                            <div id="sec_drop_content" class="sec_drop_content text-gray-700 w-[900px] absolute right-0 hidden sec_drop_content">
+                                                <div class="font-bold">Construction & Real Estate > </div>
+                                                <div class="w-[800px] flex flex-wrap gap-10 pt-5 mx-auto">
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">    
+                                                        <div>
+                                                            <img src="/src/img/display_rack.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Display Racks</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/shelves.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Supermarket Shelves</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/digital_display.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Digital Signage and Displays</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/electronic_sign.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Electronic Signs</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/hotel&resturant.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Other Hotel & Restaurant</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/sound_equip.webp " class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Sound Equipment</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/photo_boot.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Photo Booth</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/vending_machine.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Vending Machines</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/refrige.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Refrigeration Eqipment</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                        <div>
+                                                            <img src="/src/img/advertizing_inflat.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Advertising Inflatable</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold" href="#">   
+                                                        <div>
+                                                            <img src="/src/img/food_track.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Food Trucks</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/audio_equip.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Audio Sound Equipment</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/dj_installer.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">DJ Controller</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/serving_tray.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Serving Trays</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/other_advert.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Other advertising</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 hover:font-bold " href="#">   
+                                                        <div>
+                                                            <img src="/src/img/light_boxes.webp" class="w-16 h-auto border-[1px] border-solid rounded-full bg-gray-50">
+                                                        </div>                                 
+                                                        <div class="text-sm">Light Boxes</div>
+                                                    </a>
+                                                    <a class="flex-col justify-center w-28 underline" href="#">   
+                                                        More
+                                                    </a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            
+
+                        </div>
+                                                            
+                    </div>
+
+                </div>
+                <!-- Copy End -->
+                <div class="inline-block h-[360px]" id="tab_title" onmouseover="tab_show()" onmouseout="tab_hide()">
+                    <button class="tab-title font-semibold px-4 rounded inline-flex items-center">
+                        <span >Featured selections</span>
+                    </button>
+                    <div id="animated_tab_content" class="animated-tab-content h-[310px] bg-white border-t-1 border-solid border-[#ddd] absolute left-0 top-24 w-full overflow-hidden hidden cursor-pointer z-10">
+                        <div class="flex gap-10 justify-start pl-[350px] my-20">
+                            <a href="#" class="tab-content" target="_blank">
+                                <div class="featured-item border-[1px] border-solid border-[#ddd] flex flex-col text-[#222] w-[300px] h-[150px] gap-3 py-10 items-center rounded-2xl">
+                                    <div>
+                                        <i style='font-size:40px; line-height: 40px; margin-bottom: 14px;' class='fab'>&#xf17b;</i>
+                                    </div> 
+                                    <div>Top ranking</div>
+                                </div>
+                            </a>
+                            <a href="#" class="tab-content" target="_blank">
+                                <div class="featured-item border-[1px] border-solid border-[#ddd] flex flex-col text-[#222] w-[300px] h-[150px] gap-3 py-10 items-center rounded-2xl">
+                                    <div>
+                                        <i style='font-size:40px; line-height: 40px; margin-bottom: 14px;' class='fab'>&#xf17b;</i>
+                                    </div> 
+                                    <div>New Arrivals</div>
+                                </div>
+                            </a>
+                            <a href="#" class="tab-content" target="_blank">
+                                <div class="featured-item border-[1px] border-solid border-[#ddd] flex flex-col text-[#222] w-[300px] h-[150px] gap-3 py-10 items-center rounded-2xl">
+                                    <div>
+                                        <i style='font-size:40px; line-height: 40px; margin-bottom: 14px;' class='fab'>&#xf17b;</i>
+                                    </div> 
+                                    <div>Saving Spotlights</div>
+                                </div>
+                            </a>
+                            <div class="tab-content border-l-[1px] border-gray-300 border-solid ml-5">
+                                <div class="pl-7 flex flex-col gap-5 text-[#222] ">
+                                    <a href="#"> Sample Center </a>
+                                    <a href="#"> Trade shows</a>
+                                    <a href="#">Tips</a>
+                                    <a href="#">LIVE</a>
+                                    <a href="#">Global suppliers</a>  
+                                </div>
+                                                                    
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="inline-block h-[360px]" id="trade_title" onmouseover="trade_show()" onmouseout="trade_hide()">
+                    <button class="trade-title font-semibold px-4 rounded inline-flex items-center">
+                        <span >Trade Assurance</span>
+                    </button>
+                    <div id="trade_tab_content" class="animated-tab-content h-[360px] bg-white border-t-1 border-solid border-[#ddd] absolute left-0 top-24 w-full overflow-hidden hidden cursor-pointer z-10">
+                        <div class="flex gap-10 justify-start pl-[350px] my-10">
+                            <div class="w-1/3 flex flex-col py-14">
+                                <div>
+                                    <img src="/src/img/trade_assurance_black.svg">
+                                </div>
+                                <div class="text-3xl font-semibold leading-10 mt-7 mb-10">
+                                    Enjoy protection from payment to delivery.
+                                </div>
+                                <div class="hover:cursor-pointer">
+                                    <button class="bg-[#f60] rounded-full px-8 py-2 hover:bg-[#713d1b]">
+                                        <span class="text-sm font-bold pl-2 text-white">Learn more</span>
+                                    </button>
+                                </div> 
+                            </div>
+                            <div class="w-2/3 flex flex-wrap gap-10">
+                                <a href="#" class="tab-content" target="_blank">
+                                    <div class="featured-item border-[1px] border-solid border-[#ddd] flex text-[#222] w-[350px] h-[120px] gap-3 py-10 items-center rounded-2xl bg-gray-50">
+                                        <div class="pl-5">
+                                            <img src="/src/img/safe.svg">
+                                        </div> 
+                                        <div class="font-semibold text-sm">Save & easy payment</div>
+                                        <div><i style='font-size:24px' class='fas'>&#xf061;</i></div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tab-content" target="_blank">
+                                    <div class="featured-item border-[1px] border-solid border-[#ddd] flex text-[#222] w-[350px] h-[120px] gap-3 py-10 items-center rounded-2xl bg-gray-50">
+                                        <div class="pl-5">
+                                            <img src="/src/img/safe.svg">
+                                        </div> 
+                                        <div class="font-semibold text-sm">Money-back policy</div>
+                                        <div><i style='font-size:24px' class='fas'>&#xf061;</i></div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tab-content" target="_blank">
+                                    <div class="featured-item border-[1px] border-solid border-[#ddd] flex text-[#222] w-[350px] h-[120px] gap-3 py-10 items-center rounded-2xl bg-gray-50">
+                                        <div class="pl-5">
+                                            <img src="/src/img/safe.svg">
+                                        </div> 
+                                        <div class="font-semibold text-sm">Shipping & logistics services</div>
+                                        <div><i style='font-size:24px' class='fas'>&#xf061;</i></div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tab-content" target="_blank">
+                                    <div class="featured-item border-[1px] border-solid border-[#ddd] flex text-[#222] w-[350px] h-[120px] gap-3 py-10 items-center rounded-2xl bg-gray-50">
+                                        <div class="pl-5">
+                                            <img src="/src/img/safe.svg">
+                                        </div> 
+                                        <div class="font-semibold text-sm">After-sales protections</div>
+                                        <div><i style='font-size:24px' class='fas'>&#xf061;</i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex">
+                <div class="s-main">Buyer Central</div>
+                <div class="s-main">Become a supplier</div>
+                <div class="s-main">Help Center</div>
+                <div class="s-main">Get the app</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Contents -->
+    <div class="w-[1440px] mx-auto bg-white flex mt-7 gap-20">
+        <div class="left_pane w-[59%] h-auto">
+            <div class="font-semibold text-xl pr-3 mb-2">
+                New winter coats wholesale thick and loose temperament pure color fashion Artificial fur plus rabbit fur woman plus size coat
+            </div>
+            <div>
+                No reviews yet . 2 buyers
+            </div>
+            <div class="company flex items-center mt-4 bg-[url('/src/img/winter_coat/clothing_co_bg.avif')] h-10 mb-6 text-sm">
+                <div class="mr-1"><img src="/src/img/apparel/bluestar_co_logo.webp" class="w-7 h-7"></div>
+                <a href="#" class="underline"> Guangzhou Blue Star Clothing Co., Ltd.</a>
+                <div class="mx-2"><img src="/src/img/apparel/verified.avif" class="h-3 w-auto"></div>
+                <div>Multispecialty supplier  .  4 yrs</div>
+                <div class="mx-2"><img src="/src/img/apparel/china.png" class="w-4 h-auto"></div>
+                <div>CN</div>
+            </div>
+            <div class="photo_video flex gap-10">
+                <div class="img_list overflow-hidden w-16 h-full relative select-none">
+                    <div class="imgList_container relative h-[470px]">
+                        <div class="img_item_list absolute">
+                            <div class="img_item w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(0)">
+                                <img src="/src/img/winter_coat/yellow_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                                <div class="absolute top-5 right-7 text-white"><i class="fa-solid fa-circle-play"></i></div>
+                            </div>
+                            <div class="img_item w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(1)">
+                                <img src="/src/img/winter_coat/yellow_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="img_item w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(2)">
+                                <img src="/src/img/winter_coat/black_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="img_item w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(3)">
+                                <img src="/src/img/winter_coat/white_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="img_item w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(4)">
+                                <img src="/src/img/winter_coat/pink_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(5)">
+                                <img src="/src/img/winter_coat/black_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>    
+                            <div class="w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(6)">
+                                <img src="/src/img/winter_coat/brown_yellow_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                                <div class="absolute top-5 right-7 text-white"><i class="fa-solid fa-circle-play"></i></div>
+                            </div>
+                            <div class="w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(7)">
+                                <img src="/src/img/winter_coat/yellow_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(8)">
+                                <img src="/src/img/winter_coat/black_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(9)">
+                                <img src="/src/img/winter_coat/white_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(10)">
+                                <img src="/src/img/winter_coat/pink_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(11)">
+                                <img src="/src/img/winter_coat/black_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                                <div class="absolute top-5 right-7 text-white"><i class="fa-solid fa-circle-play"></i></div>
+                            </div>
+                            <div class="w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(12)">
+                                <img src="/src/img/winter_coat/brown_yellow_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="img_item w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(1)">
+                                <img src="/src/img/winter_coat/yellow_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="img_item w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(2)">
+                                <img src="/src/img/winter_coat/black_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="img_item w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(3)">
+                                <img src="/src/img/winter_coat/white_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="img_item w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(4)">
+                                <img src="/src/img/winter_coat/pink_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>
+                            <div class="w-16 h-16 rounded-lg overflow-hidden relative cursor-pointer mb-4 hover:border-2 hover:border-[#000]" onmouseover="img_item(5)">
+                                <img src="/src/img/winter_coat/black_coat.webp" class="w-16 h-16">
+                                <div class="img_mask w-full h-full absolute top-0 left-0 bg-black opacity-5"></div>
+                            </div>    
+                        </div>
+                        <div class="previous hidden border-[1px] rounded-full w-9 h-9 bg-[#fff] hover:bg-[#bbb] cursor-pointer absolute top-2 left-3" onclick="move(-1)">
+                            <div class="pt-2 flex justify-center"> <i class='fas fa-angle-up'></i> </div>
+                        </div>
+                        <div class="next border-[1px] rounded-full w-9 h-9 bg-[#fff] hover:bg-[#bbb] cursor-pointer absolute bottom-2 left-3" onclick="move(1)">
+                            <div class="pt-2 flex justify-center"> <i class='fas fa-angle-down'></i> </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="img_show w-[750px] h-[480px] bg-gray-200 rounded-xl relative">
+                    <video id="video1" width="480" controls class="mx-auto imgSlides block">
+                        <source src="/src/img/winter_coat/video_01.mp4" type="video/mp4">
+                        <source src="mov_bbb.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/yellow_bigcoat.webp" class="mx-auto w-[443px] h-auto">
+                    </div>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/black_bigcoat.webp" class="mx-auto w-[410px] h-auto">
+                    </div>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/white_bigcoat.webp" class="mx-auto w-[410px] h-auto">
+                    </div>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/pink_bigcoat.webp" class="mx-auto w-[410px] h-auto">
+                    </div>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/bblack_bigcoat.webp" class="mx-auto w-[443px] h-auto">
+                    </div>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/brown_yellow_bigcoat.webp" class="mx-auto w-[410px] h-auto">
+                    </div>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/yellow_bigcoat.webp" class="mx-auto w-[443px] h-auto">
+                    </div>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/black_bigcoat.webp" class="mx-auto w-[410px] h-auto">
+                    </div>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/white_bigcoat.webp" class="mx-auto w-[410px] h-auto">
+                    </div>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/pink_bigcoat.webp" class="mx-auto w-[410px] h-auto">
+                    </div>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/bblack_bigcoat.webp" class="mx-auto w-[443px] h-auto">
+                    </div>
+                    <div class="absolute top-0 w-full h-full hidden imgSlides">
+                        <img src="/src/img/winter_coat/brown_yellow_bigcoat.webp" class="mx-auto w-[410px] h-auto">
+                    </div>
+
+                    <div class="pre border-[1px] rounded-full w-12 h-12 bg-[#fff] hover:bg-[#bbb] cursor-pointer absolute top-1/2 left-3" onclick="plusDivs(-1)">
+                        <div class="pt-2 flex justify-center"> <i class='fas fa-angle-left text-lg'></i> </div>
+                    </div>
+                    <div class="nxt border-[1px] rounded-full w-12 h-12 bg-[#fff] hover:bg-[#bbb] cursor-pointer absolute top-1/2 right-3" onclick="plusDivs(1)">
+                        <div class="pt-2 flex justify-center"> <i class='fas fa-angle-right text-lg'></i> </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Other recommendation Floor -->
+            <div class="w-full h-[400px] bg-white overflow-hidden relative top-4">
+                <div class="winter w-full h-auto overflow-hidden absolute top-0 left-0">
+                    <div class="flex gap-4">
+                        <div class="flex flex-col !w-40">
+                            <div class="!w-40 !h-auto">
+                                <img src="/src/img/winter_coat/winter_clothes.webp" class="w-full h-full">
+                            </div>
+                            <div class="!w-40 overflow-hidden">
+                                <div class="text-sm text-[#222] mt-3">Woman winter clothes</div>
+                                <div class="font-semibold text-xl text-[#222] mt-3"><span>MMK 26,266 - MMK 29,502</span></div>
+                                <div class="text-sm text-[#222] mt-2">Min. order:30 pieces</div>     
+                            </div>  
+                        </div>   
+                        <div class="flex flex-col !w-40">
+                            <div class="!w-40 !h-auto">
+                                <img src="/src/img/winter_coat/cross_border.webp" class="w-full h-full">
+                            </div>
+                            <div class="!w-40 overflow-hidden">
+                                <div class="text-sm text-[#222] mt-3">Cross border new faux</div>
+                                <div class="font-semibold text-xl text-[#222] mt-3"><span>MMK 26,266 - MMK 32,502</span></div>
+                                <div class="text-sm text-[#222] mt-2">Min. order:1 piece</div>     
+                            </div>  
+                        </div>   
+                        <div class="flex flex-col !w-40">
+                            <div class="!w-40 !h-auto">
+                                <img src="/src/img/winter_coat/fall_winter_top.webp" class="w-full h-full">
+                            </div>
+                            <div class="!w-40 overflow-hidden">
+                                <div class="text-sm text-[#222] mt-3">Fall winter top selling</div>
+                                <div class="font-semibold text-xl text-[#222] mt-3"><span>MMK 39,266 - MMK 47,502</span></div>
+                                <div class="text-sm text-[#222] mt-2">Min. order:1 piece</div>     
+                            </div>  
+                        </div>   
+                        <div class="flex flex-col !w-40">
+                            <div class="!w-40 !h-auto">
+                                <img src="/src/img/winter_coat/women_winter.webp" class="w-full h-full">
+                            </div>
+                            <div class="!w-40 overflow-hidden">
+                                <div class="text-sm text-[#222] mt-3">New women winter</div>
+                                <div class="font-semibold text-xl text-[#222] mt-3"><span>MMK 35,266 - MMK 41,502</span></div>
+                                <div class="text-sm text-[#222] mt-2">Min. order:1 piece</div>     
+                            </div>  
+                        </div>                                     
+                    </div> 
+                </div>
+                <div class="winter w-full h-auto overflow-hidden absolute top-0 left-0 hidden">
+                    <div class="flex gap-4">
+                        <div class="flex flex-col !w-40">
+                            <div class="!w-40 !h-auto">
+                                <img src="/src/img/winter_coat/fox_hair.webp" class="w-full h-full pt-2">
+                            </div>
+                            <div class="!w-40 overflow-hidden">
+                                <div class="text-sm text-[#222] mt-3">Faux hair horizontal</div>
+                                <div class="font-semibold text-xl text-[#222] mt-3"><span>MMK 49,266 - MMK 54,502</span></div>
+                                <div class="text-sm text-[#222] mt-2">Min. order:1 piece</div>     
+                            </div>  
+                        </div>   
+                        <div class="flex flex-col !w-40">
+                            <div class="!w-40 !h-auto">
+                                <img src="/src/img/winter_coat/winter_plussize.webp" class="w-full h-full pt-2">
+                            </div>
+                            <div class="!w-40 overflow-hidden">
+                                <div class="text-sm text-[#222] mt-3">Full 2021 women clothes plus</div>
+                                <div class="font-semibold text-xl text-[#222] mt-3"><span>MMK 30,266 - MMK 36,502</span></div>
+                                <div class="text-sm text-[#222] mt-2">Min. order:1 piece</div>     
+                            </div>  
+                        </div>   
+                        <div class="flex flex-col !w-40">
+                            <div class="!w-40 !h-auto">
+                                <img src="/src/img/winter_coat/drop_shipping.webp" class="w-full h-full pt-2">
+                            </div>
+                            <div class="!w-40 overflow-hidden">
+                                <div class="text-sm text-[#222] mt-3">drop shipping products</div>
+                                <div class="font-semibold text-xl text-[#222] mt-3"><span>MMK 13,266 - MMK 17,502</span></div>
+                                <div class="text-sm text-[#222] mt-2">Min. order:1 set</div>     
+                            </div>  
+                        </div>   
+                        <div class="flex flex-col !w-40">
+                            <div class="!w-40 !h-auto">
+                                <img src="/src/img/winter_coat/euro_american_clothes.webp" class="w-full h-full pt-2">
+                            </div>
+                            <div class="!w-40 overflow-hidden">
+                                <div class="text-sm text-[#222] mt-3">Euro&American women's</div>
+                                <div class="font-semibold text-xl text-[#222] mt-3"><span>MMK 16,266 - MMK 19,502</span></div>
+                                <div class="text-sm text-[#222] mt-2">Min. order:1 set</div>     
+                            </div>  
+                        </div>                                     
+                    </div>
+                </div>                      
+                <div class="rec_pre hidden border-[1px] rounded-full w-9 h-9 bg-[#fff] hover:bg-[#bbb] cursor-pointer absolute top-32 left-1" onclick="rec_move(-1)">
+                    <div class="pt-2 flex justify-center"> <i class='fas fa-angle-left'></i> </div>
+                </div>
+                <div class="rec_next border-[1px] rounded-full w-9 h-9 bg-[#fff] hover:bg-[#bbb] cursor-pointer absolute top-32 right-1" onclick="rec_move(1)">
+                    <div class="pt-2 flex justify-center"> <i class='fas fa-angle-right'></i> </div>
+                </div>                         
+            </div>
+            <!-- Key Attributes -->
+            <div class="hidden_table w-full h-96 overflow-hidden relative text-[#222]">
+                <div class="font-bold text-xl leading-normal">Key Attributes</div>
+                <div class="font-semibold text-xl leading-normal mt-5">Other Attributes</div>
+                <table class="table-auto text-[#222] text-base leading-6 font-normal overflow-hidden mt-3">
+                    <tbody>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Place of Origin</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">guang zhou</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Processing Type</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">knitted</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Age Group</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">Adults</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Fabric Type</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">knitted</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Feature</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">Breathable, Reversible, Plus Size</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Supply Type</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">ODM, OEM service, In-Stock Items</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Technics</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">YARN DYED, WASHED</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Clothing Length</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">Regular</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Closure Type</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">Open Stitch</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Outerwear Type</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">Casual</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Pattern Type</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">Patchwork</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Sleeve Style</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">Regular</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">clothes length</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">Ordinary style (50cm)</td>
+                      </tr>
+                      <tr>
+                        <td class="w-80 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Gender</td>
+                        <td class="w-96 border-[1px] border-solid border-[#ddd] p-3">Women</td>
+                      </tr>
+                     
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-base mt-2 flex">
+                <button class="show_more text-base leading-6 underline cursor-pointer" onclick="show_more()">Show more</button>
+                <i class='up_down fas fa-angle-down pt-1'></i>
+            </div>
+            <!-- Lead Time -->
+             <div class="lead_table w-full h-auto overflow-hidden relative text-[#222] mt-10 border-t-[1px] pt-8">    
+                <div class="font-bold text-xl leading-normal">Lead Time</div>
+                <table class="table-auto text-[#222] text-sm leading-6 font-normal overflow-hidden mt-3">
+                    <tbody>
+                        <tr>
+                          <td class="w-40 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Quantity (pieces)</td>
+                          <td class="w-24 border-[1px] border-solid border-[#ddd] p-3">1 - 100</td>
+                          <td class="w-40 border-[1px] border-solid border-[#ddd] p-3">> 100</td>
+                        </tr>
+                        <tr>
+                            <td class="w-40 bg-[#f4f4f4] border-[1px] border-solid border-[#ddd] p-3">Lead time (days)</td>
+                            <td class="w-24 border-[1px] border-solid border-[#ddd] p-3">20</td>
+                            <td class="w-40 border-[1px] border-solid border-[#ddd] p-3">To be negotiated</td>
+                          </tr>
+                    </tbody> 
+                </table>
+            </div>
+            <!-- Samples -->
+            <div class="w-full h-auto overflow-hidden relative mt-10 border-t-[1px] pt-8">    
+                <div class="sample font-bold text-xl leading-normal text-[#222]">Samples</div>
+                <div class="text-base leading-normal mt-5 text-[#222]">Maximum order quantity: 1 piece</div>
+                <div class="text-base leading-normal mt-2 text-[#222]">Sample price:&nbsp; <span class="font-bold">MMK 70,030/piece</span></div>
+                <button class="text-sm border-black border-2 rounded-2xl px-8 py-2 mt-5 bg-white hover:bg-[#bbb] cursor-pointer"><span class="text-[#222]">Order sample</span></button>
+            </div>
+            <!-- Performance Analysis -->
+            <div class="w-full h-auto overflow-hidden relative mt-10 border-t-[1px] pt-8">    
+                <div class="font-bold text-xl leading-normal text-[#222]">Performance analysis</div>
+               <div class="flex justify-evenly mt-4">
+                    <a href="#" class="cursor-pointer text-center">
+                        <div class="text-xs">Store's order volume</div>
+                        <div class="font-bold text-lg mt-2">1,200+</div>
+                    </a>
+                    <a href="#" class="cursor-pointer text-center">
+                        <div class="text-xs">Store's sales amount</div>
+                        <div class="font-bold text-lg mt-2">$100,000+</div>
+                    </a>
+                    <a href="#" class="cursor-pointer text-center">
+                        <div class="text-xs">Store's sales trend</div>
+                        <div><img src="/src/img/winter_coat/line_graph.png" class="w-auto h-9"></div>
+                    </a>
+                    <a href="#" class="cursor-pointer text-center">
+                        <div class="text-xs">Store's order trend</div>
+                        <div><img src="/src/img/winter_coat/line_graph01.png" class="w-auto h-9"></div>
+                    </a>
+               </div>
+               <div class="text-sm mt-4 flex">
+                <button class="text-sm leading-8 cursor-pointer" onclick="show_more()">View more data</button>
+                <i class='up_down fas fa-angle-right pt-1 pl-2'></i>
+                </div>
+            </div>
+           <!-- Ratings & Reviews -->
+            <div class="w-full h-auto overflow-hidden relative mt-10 border-t-[1px] pt-8">    
+                <div class="font-bold text-xl leading-normal text-[#222]">Ratings & Reviews</div>
+
+                <!-- This is atab component -->
+                <div class="w-full h-auto mx-auto">
+                    
+                    <div class="mb-2">
+                        <ul class="flex flex-wrap -mb-px" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                            <li class="mr-2" role="presentation">
+                                <button class="inline-block text-[#222] hover:font-bold hover:border-gray-300 rounded-t-lg py-4 px-4 text-base font-medium border-transparent border-b-2 dark:text-[#222] dark:hover:text-gray-300" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Product reviews</button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                                <button class="inline-block text-[#222] hover:font-bold hover:border-gray-300 rounded-t-lg py-4 px-4 text-base font-medium border-transparent border-b-2 dark:text-[#222] dark:hover:text-gray-300 active" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="true">Store reviews</button>
+                            </li>                           
+                        </ul>
+                    </div>
+                    <div id="myTabContent">
+                        <div class="p-4 h-40 bg-white rounded-lg dark:bg-gray-800 hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="flex justify-between">
+                                <div class="mt-3">
+                                    <div class="text-base font-semibold">No product reviews yet</div>
+                                    <div class="text-base mt-2">Go to <span class="underline">store reviews</span> to see reviews for other products</div>
+                                </div>
+                                <div>
+                                    <img src="/src/img/winter_coat/no_review.png" class="w-32 h-auto">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class=" p-4 h-72 rounded-lg dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                            <div class="text-base"><span class="text-xl font-bold">4.3</span>/5 Very satisfied</div>
+                            <div class="flex gap-10 text-base w-full mt-5">
+                                <div class="w-40">Supplier service</div>
+                                <div class="flex">  
+                                    <div class="h-1 bg-[#bbb] w-24 rounded-xl mt-3">
+                                        <div class="h-1 bg-[#f60] w-16 rounded-xl"></div>
+                                    </div>
+                                    <div class="ml-8">4.3</div>
+                                </div>
+                            </div>
+                            <div class="flex text-base w-full mt-2">
+                                <div class="w-40 mr-8">Ontime shipment </div>
+                                <div class="h-1 bg-[#bbb] w-24 rounded-xl mt-3">
+                                    <div class="h-1 bg-[#f60] w-2/3 rounded-xl"></div>
+                                </div>
+                                <div class="ml-8">4.4</div>
+                            </div>
+                            <div class="flex text-base w-full mt-2">
+                                <div class="w-40 mr-8">Product quality&nbsp;&nbsp;&nbsp;</div>
+                                <div class="h-1 bg-[#bbb] w-24 rounded-xl mt-3">
+                                    <div class="h-1 bg-[#f60] w-14 rounded-xl"></div>
+                                </div>
+                                <div class="ml-8">4.1</div>
+                            </div>
+                            <div class="btn_gp flex flex-wrap mt-5">
+                                <button class="bg-white hover:bg-gray-300 border-2 border-gray-500 hover:border-black rounded-full w-10 h-10 text-center grid items-center cursor-pointer">All</button>
+                                <button class="ml-3 bg-white hover:bg-gray-300 border-2 border-gray-500 hover:border-black rounded-3xl w-56 h-10 text-center grid items-center cursor-pointer">With photos/videos (191)</button>
+                                <button class="ml-3 bg-white hover:bg-gray-300 border-2 border-gray-500 hover:border-black rounded-3xl w-40 h-10 text-center grid items-center cursor-pointer px-4">5 stars (7451)</button>
+                                <button class="ml-3 bg-white hover:bg-gray-300 border-2 border-gray-500 hover:border-black rounded-3xl w-40 h-10 text-center grid items-center cursor-pointer px-4">4 stars (323)</button>
+                                <button class="ml-3 bg-white hover:bg-gray-300 border-2 border-gray-500 hover:border-black rounded-3xl w-40 h-10 text-center grid items-center cursor-pointer px-4">3 stars (273)</button>
+                                <button class="mt-3 bg-white hover:bg-gray-300 border-2 border-gray-500 hover:border-black rounded-3xl w-40 h-10 text-center grid items-center cursor-pointer px-4">2 stars (114)</button>
+                                <button class="ml-3 mt-3 bg-white hover:bg-gray-300 border-2 border-gray-500 hover:border-black rounded-3xl w-40 h-10 text-center grid items-center cursor-pointer px-4">1 star (204)</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="img_show">
+                <div>
+                    <img src="/src/img/winter_coat/discount.webp">
+                </div>
+                <div class="text-base leading-7 mt-4 w-40 text-[#333]">New winter coats wholesale thick and loose temperament pure color fashion imitation fox hair woman<br> plus size coat</div>
+                <h2 class="text-xl text-gray-700 border-b-2 pb-5 mt-10">Size Information</h2>
+                <div class="mt-7"><img src="/src/img/winter_coat/size.webp" class="w-[750px]"></div> 
+                
+                <h2 class="text-xl text-gray-700 border-b-2 pb-5 mt-10">Product introduction and details</h2>
+                <div class="mt-7"><img src="/src/img/winter_coat/product_detail01.webp" class="w-[750px]"></div> 
+                <div class="mt-3"><img src="/src/img/winter_coat/product_detail02.webp" class="w-[750px]"></div> 
+                <div class="mt-3"><img src="/src/img/winter_coat/product_detail03.webp" class="w-[750px]"></div> 
+                <div class="mt-3"><img src="/src/img/winter_coat/product_detail04.webp" class="w-[750px]"></div> 
+                <div class="mt-3"><img src="/src/img/winter_coat/product_detail05.webp" class="w-[750px]"></div> 
+                <div class="mt-3"><img src="/src/img/winter_coat/product_detail06.webp" class="w-[750px]"></div> 
+                <div class="mt-3"><img src="/src/img/winter_coat/product_detail07.webp" class="w-[750px]"></div> 
+
+                <h2 class="text-xl text-gray-700 border-b-2 pb-5 mt-10">Company Profile</h2>
+                <div class="text-base leading-7 mt-4 w-[750px] text-gray-700">Guangzhou Blue Star Clothing Co., Ltd is a wholesale company that manufactures good & high quality knitting wear and woven wear,starting from 2008.The company provides the customized products and OEM service. Various new collections and design are coming out each month with the current styles and fabrics. The factory own the proficient skill and updated machine</div>
+                <div class="mt-3"><img src="/src/img/winter_coat/company_profile.webp" class="w-[750px]"></div> 
+                <div class="mt-3"><img src="/src/img/winter_coat/how_order.webp" class="w-[750px]"></div> 
+
+                <h2 class="text-xl text-gray-700 border-b-2 pb-5 mt-10">FAQ</h2>
+                <div class="text-sm leading-7 mt-4 w-[750px] text-gray-700"> 
+                    Q: What kind of products can you supply?.
+                    <br>A: We are specialized in designing and manufacturing items on women dress, yoga wear, swimwear, bikini, t-shirt, workout apparel, men wear, etc. 
+                    <br>Q: What's the order quantity?
+                    <br>.A: There have different requirement on different products. Please firstly speak with us what you interested, then we can confirm.
+                    <br>Q: Can I put my own logo?
+                    <br>A: That can be accepted, but there have min. order quantity.
+                    <br>Q: About sample,
+                    <br>A: After finished negotiation, we can send you requested sample, and be charged, sample fee can be subtracted from next bulk order.
+                    <br> Q: Lead time,
+                    <br>A: Within 24 hours for in stock orders, Production time for customized orders depend on the quantity.
+                    <br>Q: Quality inspection,
+                    <br>A: There have three times quality inspection, each step finished check, item finished check, check before packaging.
+                    <br>Q: Payment type,
+                    <br>A: These can be accepted for Bank transfer, MoneyGram, Western Union, Ali baba Trade Assurance Order, 100% full payment received before shipping out.
+               </div>
+            </div>
+        </div>
+        <!-- Right Pane -->
+        <div class="m_right_pane w-[35%] relative"> <!--  fixed left-[936px] -->
+            <div class="right_pane h-[1180px] w-full bg-[#fff] border-[1px] rounded-xl relative overflow-scroll">
+                <div class="more_padd px-5 pt-7"> <!-- pb-40 -->
+                    <a href="#" class="font-semibold text-sm border-b-1 border-b-solid border-b-black h-5">#7 <span class="font-normal underline">Most popular in Plus Size Women's Coats</span></a>
+                    <div class="flex mt-7 border-t-[1px] flex-wrap h-32">
+                        <div class="w-[200px] pt-7 pr-5">
+                            <div class="text-gray-500 text-base">1 - 29 pieces</div>
+                            <div class="text-3xl font-semibold">MMK 69,860</div>
+                        </div>
+                        <div class="w-[200px] pt-7">
+                            <div class="text-gray-500 text-base">30 - 99 pieces</div>
+                            <div class="text-3xl font-semibold">MMK 65,940</div>
+                        </div>
+                        <div class="w-[200px] pt-7 pr-5">
+                            <div class="text-gray-500 text-base">100 - 9999 pieces</div>
+                            <div class="text-3xl font-semibold">MMK 62,587</div>
+                        </div>
+                        <div class="w-[200px] pt-7">
+                            <div class="text-gray-500 text-base">>= 10000 pieces</div>
+                            <div class="text-3xl font-semibold">MMK 58,688</div>
+                        </div>
+                    </div>
+                    <div class="relative top-20 border-t-[1px] flex-wrap h-52">
+                        <div class="pt-7 font-semibold text-xl">
+                            Variations
+                        </div>
+                        <div class="pt-2 text-base flex font-normal justify-between">
+                            <div class="text-[#333]"> Total options: 5 Color;8 Size.</div>
+                            <div><a href="#" class="pt-7 underline font-semibold cursor-pointer">       
+                                    Select now
+                                </a></div>
+                        </div>   
+                        <div class="pt-5">
+                            <h2 class="text-sm font-semibold">Color</h2>
+                            <div class="flex gap-3">
+                                <a href="#" class="cursor-pointer"><img src="/src/img/winter_coat/coat_thumb01.webp" class="w-11 h-11 rounded-md"></a>
+                                <a href="#" class="cursor-pointer"><img src="/src/img/winter_coat/coat_thumb02.webp" class="w-11 h-11 rounded-md"></a>
+                                <a href="#" class="cursor-pointer"><img src="/src/img/winter_coat/coat_thumb03.webp" class="w-11 h-11 rounded-md"></a>
+                                <a href="#" class="cursor-pointer"><img src="/src/img/winter_coat/coat_thumb04.webp" class="w-11 h-11 rounded-md"></a>
+                                <a href="#" class="cursor-pointer"><img src="/src/img/winter_coat/coat_thumb05.webp" class="w-11 h-11 rounded-md"></a>
+                            </div>
+                        </div>   
+                        <div class="pt-5">
+                            <h2 class="text-sm font-semibold pb-3">Size</h2>
+                            <div class="flex gap-2">
+                                <a href="#" class="cursor-pointer border-2 border-solid border-[#fff] rounded-lg grid items-center"><span class="bg-[#f4f4f4] rounded-lg text-[#222] text-sm font-normal leading-5 py-2 px-3">5 XL</span></a>
+                                <a href="#" class="cursor-pointer border-2 border-solid border-[#fff] rounded-lg grid items-center"><span class="bg-[#f4f4f4] rounded-lg text-[#222] text-sm font-normal leading-5 py-2 px-3">4 XL</span></a>
+                                <a href="#" class="cursor-pointer border-2 border-solid border-[#fff] rounded-lg grid items-center"><span class="bg-[#f4f4f4] rounded-lg text-[#222] text-sm font-normal leading-5 py-2 px-3">3 XL</span></a>
+                                <a href="#" class="cursor-pointer border-2 border-solid border-[#fff] rounded-lg grid items-center"><span class="bg-[#f4f4f4] rounded-lg text-[#222] text-sm font-normal leading-5 py-2 px-3">2 XL</span></a>
+                                <a href="#" class="cursor-pointer border-2 border-solid border-[#fff] rounded-lg grid items-center"><span class="bg-[#f4f4f4] rounded-lg text-[#222] text-sm font-normal leading-5 py-2 px-3"> XL</span></a>
+                                <a href="#" class="cursor-pointer border-2 border-solid border-[#fff] rounded-lg grid items-center"><span class="bg-[#f4f4f4] rounded-lg text-[#222] text-sm font-normal leading-5 py-2 px-3">M</span></a>
+                                <a href="#" class="cursor-pointer border-2 border-solid border-[#fff] rounded-lg grid items-center"><span class="bg-[#f4f4f4] rounded-lg text-[#222] text-sm font-normal leading-5 py-2 px-3">S</span></a>
+                            </div>
+                        </div>             
+                    </div>
+    
+                    <div class="go_to_hide h-32 bg-[#fff] z-10"> <!-- absolute bottom-0 mt-36  -->
+                        <div class="pt-8 w-[400px] flex gap-4">
+                            <button class="rounded-3xl bg-[#f60] h-12 border-[#f60] text-white font-semibold text-base w-full"><span class="px-4 py-3">Contact Supplier</span></button>
+                            <button class="rounded-3xl bg-[#fff] h-12 border-2 border-[#333] text-[#333] font-semibold text-base w-full"><span class="px-12 py-3 leading-6">Chat Now</span></button>
+                        </div>  
+                        <div class="pt-4 text-base text-[#333] font-normal">
+                            Still deciding? Get samples first! <a href="#" class="underline cursor-pointer">Order sample</a>
+                        </div>
+                    </div>
+                    <div class="membership mt-7 border-t-[1px] flex-wrap relative top-2 h-16"> <!-- relative top-28 -->
+                        <div class="pt-7 font-semibold text-xl">
+                            Membership benefits <span class="benefits"></span>
+                        </div>
+                        <div class="claim pt-2 text-base text-[#333] flex font-normal gap-2">
+                            <div> 3-day coupon giveaway: up to US $80 off</div>
+                            <div><a href="#" class="pt-7 underline cursor-pointer">       
+                                Claim now
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="purchase mt-7 border-t-[1px] flex-wrap h-44 relative top-10"> <!-- relative top-32 -->
+                        <div class="pt-7 font-semibold text-xl">
+                            Purchase details
+                        </div>
+                        <div class="pt-2 text-sm text-gray-500 flex font-normal gap-2">
+                            <div> Protection with</div>
+                            <div><a href="#">       
+                                <img src="/src/img/winter_coat/trade_assurance.webp" class="h-5 mx-1 mb-[1px]">
+                                </a></div>
+                        </div>
+                        <div class="pt-3 text-sm">
+                            <!-- Shipping -->
+                            <div class="flex gap-5">
+                                <div>
+                                <img src="/src/img/winter_coat/box_car.avif" class="w-5 h-5">
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Shipping</div>
+                                    <span class="underline cursor-pointer">Contact supplier</span>to negotiate shipping details<br>                                
+                                    Enjoy <span class="font-semibold">On-time Dispatch Guarantee</span><span class="cursor-pointer pl-2"><i class="fa-solid fa-circle-exclamation"></i></span>
+                                </div>
+                            </div>
+                            <!-- Payments -->
+                            <div class="pt-3 flex gap-5">
+                                <div>
+                                <img src="/src/img/winter_coat/payment.avif" class="w-5 h-5">
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Payments</div>
+                                    <div class="flex pt-2 pb-3">
+                                        <a href="#" class="border-[1px] border-solid border-[#d8d8d8] rounded-md p-1 mr-1 mb-[2px] w-10 cursor-pointer grid items-center"><img src="/src/img/winter_coat/visa.png" class="h-3"></a>
+                                        <a href="#" class="border-[1px] border-solid border-[#d8d8d8] rounded-md p-1 mr-1 mb-[2px] w-17 cursor-pointer grid items-center"><img src="/src/img/winter_coat/logo_interset.png" class="h-3"></a>
+                                        <a href="#" class="border-[1px] border-solid border-[#d8d8d8] rounded-md p-1 mr-1 mb-[2px] w-14 cursor-pointer grid items-center"><img src="/src/img/winter_coat/paypal.png" class="h-3"></a>
+                                        <a href="#" class="border-[1px] border-solid border-[#d8d8d8] rounded-md p-1 mr-1 mb-[2px] w-11 cursor-pointer grid items-center"><img src="/src/img/winter_coat/apple_pay.png" class="h-3"></a>
+                                        <a href="#" class="border-[1px] border-solid border-[#d8d8d8] rounded-md p-1 mr-1 mb-[2px] w-11 cursor-pointer grid items-center"><img src="/src/img/winter_coat/g_pay.png" class="h-3"></a>
+                                        <a href="#" class="border-[1px] border-solid border-[#d8d8d8] rounded-md p-1 mr-1 mb-[2px] w-10 cursor-pointer grid text-center"><span class="text-xs font-normal">...</span></a>
+                                        
+                                    </div>
+                                    <span>Enjoy encrypted and secure payments</span><span class="underline cursor-pointer">View details</span>
+                                </div>
+                            </div>
+                             <!-- Returns & refunds -->
+                             <div class="pt-3 flex gap-5">
+                                <div>
+                                <img src="/src/img/winter_coat/return.avif" class="w-5 h-5">
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Returns & Refunds</div>
+                                    <span>Eligible for refunds within 30 days of receiving products.</span><span class="underline cursor-pointer">View details</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div> 
+        </div>       
+
+    </div>
+    <!-- Bottom Floor -->
+    <div class="w-[1440px] mx-auto bg-white mt-7 border-t-[1px]">
+        <div class="frequent_bought mt-7">
+            <div class="font-bold text-xl">Frequently bought together</div>
+            <div class="flex w-full gap-2 mt-7">
+                <a href="#" class="w-1/5 cursor-pointer">
+                    <div><img src="/src/img/winter_coat/freq_bought01.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40 mt-2">
+                        <div>Fashion Casual</div>
+                        <div class="font-bold text-lg">MMK 10,695 - MMK 15,065</div>
+                        <div>Min. order:2 pieces</div>
+                    </div>  
+                </a>
+                <a href="#" class="w-1/5 cursor-pointer">
+                    <div><img src="/src/img/winter_coat/freq_bought02.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40 mt-2">
+                        <div>New women winter</div>
+                        <div class="font-bold text-lg">MMK 12,695 - MMK 15,065</div>
+                        <div>Min. order:5 pieces</div>
+                    </div>  
+                </a>
+                <a href="#" class="w-1/5 cursor-pointer">
+                    <div><img src="/src/img/winter_coat/freq_bought03.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40 mt-2">
+                        <div>The new coat casual</div>
+                        <div class="font-bold text-lg">MMK 10,695 - MMK 15,065</div>
+                        <div>Min. order:1 piece</div>
+                    </div>  
+                </a>
+                <a href="#" class="w-1/5 cursor-pointer">
+                    <div><img src="/src/img/winter_coat/freq_bought04.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40">
+                        <div>Hot sale professional</div>
+                        <div class="font-bold text-lg">MMK 15,695 - MMK 17,065</div>
+                        <div>Min. order:1 piece</div>
+                    </div>  
+                </a>
+                <a href="#" class="w-1/5 cursor-pointer">
+                    <div><img src="/src/img/winter_coat/freq_bought05.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40">
+                        <div>2022 summer new</div>
+                        <div class="font-bold text-lg">MMK 18,695 - MMK 24,065</div>
+                        <div>Min. order:1 set</div>
+                    </div>  
+                </a>
+            </div>
+        </div>
+        <div class="supplier_popular mt-7">
+            <div class="font-bold text-xl">Supplier's popular products</div>
+            <div class="flex w-full gap-10 mt-7">
+                <a href="#" class=" cursor-pointer">
+                    <div><img src="/src/img/winter_coat/sup_pop01.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40 mt-2">
+                        <div>Winter clothes</div>
+                        <div class="font-bold text-lg">MMK 40,695 - MMK 47,065</div>
+                        <div>Min. order:1 piece</div>
+                    </div>  
+                </a>
+                <a href="#" class="cursor-pointer">
+                    <div><img src="/src/img/winter_coat/sup_pop02.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40 mt-2">
+                        <div>New fall jumpsuit</div>
+                        <div class="font-bold text-lg">MMK 25,695 - MMK 29,065</div>
+                        <div>Min. order:5 pieces</div>
+                    </div>  
+                </a>
+                <a href="#" class="cursor-pointer">
+                    <div><img src="/src/img/winter_coat/sup_pop03.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40 mt-2">
+                        <div>Spring fall women </div>
+                        <div class="font-bold text-lg">MMK 12,695 - MMK 16,065</div>
+                        <div>Min. order:1 piece</div>
+                    </div>  
+                </a>
+                <a href="#" class="cursor-pointer">
+                    <div><img src="/src/img/winter_coat/sup_pop04.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40">
+                        <div>Long sleeve</div>
+                        <div class="font-bold text-lg">MMK 7,695 - MMK 24,065</div>
+                        <div>Min. order:1 piece</div>
+                    </div>  
+                </a>
+                <a href="#" class="w-1/5 cursor-pointer">
+                    <div><img src="/src/img/winter_coat/sup_pop06.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40">
+                        <div>summer plus size</div>
+                        <div class="font-bold text-lg">MMK 12,695 - MMK 16,065</div>
+                        <div>Min. order:1 set</div>
+                    </div>  
+                </a>
+                <a href="#" class="cursor-pointer">
+                    <div><img src="/src/img/winter_coat/sup_pop07.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40">
+                        <div>Plus size fall women</div>
+                        <div class="font-bold text-lg">MMK 18,695 - MMK 23,065</div>
+                        <div>Min. order:1 set</div>
+                    </div>  
+                </a>
+                <a href="#" class="cursor-pointer">
+                    <div><img src="/src/img/winter_coat/sup_pop08.webp" class="w-40 h-auto rounded-xl"></div>
+                    <div class="w-40">
+                        <div>2022 clothing sexy</div>
+                        <div class="font-bold text-lg">MMK 34,695 - MMK 41,065</div>
+                        <div>Min. order:1 set</div>
+                    </div>  
+                </a>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Start -->
+      <!-- Footer -->
+        <div class="bg-white w-full h-auto border-t-[1px] border-solid border-[#ddd] text-[#222] text-sm leading-[18px] pt-10 ">
+            <div class="w-[1440px] px-10 mx-auto pb-8 h-auto">
+                <div class="footer-links flex justify-between w-full">
+                    <div>
+                        <h3 class="text-base font-bold leading-6 mb-5">Get support</h3>
+                        <ul>
+                            <li class="mb-5"><a href="#" target="_blank">Help Center</a></li>
+                            <li class="mb-5"><a href="#" target="_blank">Live chat</a></li>
+                            <li class="mb-5"><a href="#" target="_blank">Check order status</a></li>
+                            <li class="mb-5"><a href="#" target="_blank">Refunds</a></li>
+                            <li class="mb-5"><a href="#" target="_blank">Report abuse</a></li>                    
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold leading-6 mb-5">Trade Assurance</h3>
+                        <ul>
+                            <li class="mb-5"><a href="#" target="_blank">Safe and easy payments</a></li>  
+                            <li class="mb-5"><a href="#" target="_blank">Money-back policy</a></li> 
+                            <li class="mb-5"><a href="#" target="_blank">On-time shipping</a></li> 
+                            <li class="mb-5"><a href="#" target="_blank">After-sales protections</a></li> 
+                            <li class="mb-5"><a href="#" target="_blank">Product monitoring services</a></li>            
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold leading-6 mb-5">Source on Alibaba.com</h3>
+                        <ul>
+                            <li class="mb-5"><a href="#" target="_blank">Request for Quotation</a></li>  
+                            <li class="mb-5"><a href="#" target="_blank">Membership program</a></li> 
+                            <li class="mb-5"><a href="#" target="_blank">Alibaba.com logistics</a></li> 
+                            <li class="mb-5"><a href="#" target="_blank">Sales tax and VAT</a></li> 
+                            <li class="mb-5"><a href="#" target="_blank">Alibaba.com Reads</a></li>            
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold leading-6 mb-5">Sell on Alibaba.com</h3>
+                        <ul>
+                            <li class="mb-5"><a href="#" target="_blank">Start selling</a></li>  
+                            <li class="mb-5"><a href="#" target="_blank">Seller Central</a></li>
+                            <li class="mb-5"><a href="#" target="_blank">Become a Verified Supplier</a></li>
+                            <li class="mb-5"><a href="#" target="_blank">Partnerships</a></li>
+                            <li class="mb-5"><a href="#" target="_blank">Download the app for suppliers</a></li>                
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold leading-6 mb-5">Get to know us</h3>
+                        <ul>
+                            <li class="mb-5"><a href="#" target="_blank">About Alibaba.com</a></li>
+                            <li class="mb-5"><a href="#" target="_blank">Cooperate responsibility</a></li>
+                            <li class="mb-5"><a href="#" target="_blank">News center</a></li>
+                            <li class="mb-5"><a href="#" target="_blank">Careers</a></li>           
+                        </ul>
+                    </div>            
+                </div>
+                <div class="sns-app flex justify-between mt-5">
+                    <div class="sns h-10 flex gap-6">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="/src/img/fb_logo.png" alt="" class="h-7">
+                        </a>
+                        <a href="https://www.linkin.com/" target="_blank">
+                            <img src="/src/img/instagram_logo.png" alt="" class="h-7">
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img src="/src/img/twitter_logo.png" alt="" class="h-7">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="/src/img/insta_logo.png" alt="" class="h-7">
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="/src/img/youtube_logo.png" alt="" class="h-7">
+                        </a>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <img src="/src/img/tiktok_logo.png" alt="" class="h-7">
+                        </a>
+                    </div>
+                    <div class="app flex gap-5 items-center">
+                        <div>
+                            Trade on the go with the  
+                            <a href="https://app.alibaba.com/" target="_blank" class="font-bold underline">Alibaba.com app</a>
+                        </div>
+                        <a href="https://apps.apple.com/us/app/alibaba-for-iphone/id503451073?spm=a2700.product_home_l3.home_header.42.2ce267afj7vdoC" target="_blank">
+                            <img src="/src/img/app_store.avif" class="h-10">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?spm=a2700.product_home_l3.home_header.43.2ce267afj7vdoC&id=com.alibaba.intl.android.apps.poseidon&referrer=pcmaindownload" target="_blank">
+                            <img src="/src/img/google_play.avif" class="h-10">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-full bg-[#f4f4f4] text-[#666] flex flex-col gap-3 py-5 px-8 text-center">
+                <div>
+                    <a href="#" target="_blank" class="pr-2">AliExpress</a>
+                    <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">1688.com</a>
+                    <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Tmall Taobao World</a>
+                    <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Alipay</a>
+                    <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Lazada</a>
+                    <a href="#" target="_blank" class="before:content-['|'] before:pr-2 pr-2">Taobao Global</a>
+                </div>
+                <div>
+                    <a href="#" target="_blank" class="pr-2">Policies and rules</a>
+                    <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Legal notices</a>
+                    <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Product Listing Policies</a>
+                    <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Intellectural Property Protection</a>
+                    <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Privacy Policy</a>
+                    <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Terms of Use</a>
+                    <a href="#" target="_blank" class="before:content-['.'] before:pr-2 pr-2">Integrity Compliance</a>
+                </div>
+                <div class="flex gap-3 justify-center">
+                    <span>© 1999-2023 Alibaba.com. All rights reserved.
+                    </span>
+                    <a href="#" target="_blank" class="pl-2 flex gap-3">
+                        <img src="/src/img/chinese_logo.gif" class="w-5 h-5">
+                        浙公网安备 33010002000092号
+                    </a>           
+                    <a href="#" target="_blank" class="pl-2 flex gap-3">
+                        <img src="/src/img/chinese_logo01.avif" class="w-5 h-5"> 浙B2-20120091-4</a>
+                </div>
+
+            </div>
+
+        </div>
+    <!-- End -->
+        <!-- Back to Top Button -->
+    <div class="fixed bottom-0 right-0">
+        <div class="backTop w-14 cursor-pointer h-14 opacity-80 z-50 hidden bg-gray-300" onclick="backTop()">
+            <div><img src="/src/img/apparel/toUpHome.svg" class="h-10 w-10 -rotate-90 mt-2 ml-2"></div>            
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+    <script src="/src/js/winter_coat.js"></script>
+</body>
+</html>
